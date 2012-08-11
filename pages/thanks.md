@@ -32,4 +32,7 @@ I would just like to record someplace a thank you roll for pages/links and sites
 
 
 ### Git & GitHub
+
+### Look at again
+[Rails 3.2 + Markdown + Pygments + RedCarpet + Heroku](http://danneu.com/posts/9-rails-3-2-markdown-pygments-redcarpet-heroku)
 * [Git: Crash course](https://github.com/mattions/git_crash_course)
