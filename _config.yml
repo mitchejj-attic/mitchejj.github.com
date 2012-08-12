@@ -3,7 +3,7 @@
 permalink: pretty
 #permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "Gemfile", "Gemfile.lock"]
+exclude: ['public', 'bin', 'vendor', 'lessons', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md', '.rvmrc', '.rbenv-version']
 auto: true
 pygments: true
 markdown: kramdown
