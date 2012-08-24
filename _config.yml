@@ -3,11 +3,25 @@
 permalink: pretty
 #permalink: /:categories/:year/:month/:day/:title 
 
-exclude: ['public', 'bin', 'vendor', 'lessons', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md', '.rvmrc', '.rbenv-version']
+exclude: ['public', 'siteSpec', 'bin', 'vendor', 'lessons', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md', '.rvmrc', '.rbenv-version', 'newrelic.yml']
 auto: true
 pygments: true
 markdown: kramdown
+kramdown:
+  auto_ids: true,
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true  
+  coderay:
+    coderay_wrap: div
+    #coderay_line_numbers: inline
+    #coderay_line_numbers_start: 1
+    coderay_tab_width: 3
+    #coderay_bold_every: 5
+    coderay_css: style
 
+	  
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
