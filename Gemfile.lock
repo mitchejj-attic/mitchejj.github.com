@@ -51,7 +51,6 @@ DEPENDENCIES
   RedCloth
   coderay
   dalli
-  kramdown
   liquid
   memcachier
   newrelic_rpm

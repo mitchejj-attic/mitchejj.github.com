@@ -11,7 +11,7 @@ gem "liquid"
 
 ##### Add-ons for Jekyll
 gem "RedCloth"            # if you want to use the Textile Markup Language
-gem "kramdown"            # i wish to use kramdown
+#gem "kramdown"            # i wish to use kramdown
 gem "coderay"
 
 #### For the Server
