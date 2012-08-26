@@ -7,6 +7,9 @@ description: ""
 
 I would just like to record someplace a thank you roll for pages/links and sites I found useful.
 
+* ;)
+{:toc}
+
 ###For Jekyll Deployment & Development					{#jekyll-intro}
 * [Jekyll vs. Hyde - A Comparison Of Two Static Site Generators](http://philipm.at/2011/0507/)
 * [gist: 227621 -- Pagination in Jekyll](https://gist.github.com/227621)
