@@ -9,9 +9,9 @@ tags: []
 Why is it I can never remember:
 
 		rake post title="Hello World"
-{:lang="shell-unix-generic"}
+{:lang="text"}
 
 or
 
 		rake page name="about.md"
-{:lang="shell-unix-generic"}
+{:lang="text"}
