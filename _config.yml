@@ -88,7 +88,7 @@ JB :
   #
   archive_path: /archive/
   categories_path : /categories/
-  tags_path : /tags/index.html
+  tags_path : /tags/
 
   # Settings for comments helper
   # Set 'provider' to the comment provider you want to use.
