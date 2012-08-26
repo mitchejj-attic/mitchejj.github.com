@@ -1,9 +1,5 @@
-{% assign _imgTemp = nil %} {% assign _imgURLSize = page.imgURL | size %} {% assign _imgCapSize = page.imgCap | size %}
-{% if _imgURLSize > 0 and _imgCapSize > 0 %}
-{% capture _imgTemp %}<figure><img src="{{ page.imgURL }}"><figcaption><br>{{page.imgCap}}</figcaption></figure>
-{% endcapture %}
-{% elsif _imgURLSize > 0 and _imgCapSize <= 0 %}
-	{% capture _imgTemp %}<figure><img src="{{ page.imgURL }}"><figcaption></figcaption> </figure>{% endcapture %}
-{% else %}
-	{% assign _viaTemp = nil %}
-{% endif %} {{ _imgTemp }} {% assign _viaTemp = nil %}
+
+
+<div class="image" markdown="1">
+<figure><img src="{{ page.imgURL }}" class="img-rounded"><figcaption><br>{{page.imgCap}}</figcaption></figure>
+</div>
