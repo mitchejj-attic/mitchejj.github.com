@@ -10,11 +10,10 @@ Now that I have github -> heroku publishing in place now is the time to setup ev
 
 I made the following addition to `config.ru`
 		
-		require 'dalli'
-		require 'rack-cache'
-		#require 'memcachier'
-		...
 		if memcache_servers = ENV["MEMCACHE_SERVERS"]
+			require 'dalli'
+			require 'rack-cache'
+			require 'memcachier'
 			$cache = Dalli::Client.new
 			use Rack::Cache,
 				:verbose => true,
@@ -23,9 +22,11 @@ I made the following addition to `config.ru`
 		end
 {:lang="ruby"}
 
-To test that caching is working use `ab` aka Apache HTTP server benchmarking tool and run `ab -n 1000 -c 5 <hostname>`
+To test that caching is working use `ab` aka Apache HTTP server benchmarking tool and run `ab -n 500 -c 5 <hostname>`
 	
-This will make 1000 requst to <hostname> with 5 concurrent request.
+This will make 500 requst to <hostname> with 5 concurrent request.
+
+And to see if `Rack::Deflater` is working
 
 		curl -I -H "Accept-Encoding: gzip,deflate"
 {:lang="text"}
