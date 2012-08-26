@@ -9,7 +9,7 @@ use Rack::Deflater
 if memcache_servers = ENV["MEMCACHE_SERVERS"]
   require 'dalli'
   require 'rack-cache'
-  require 'memcachier'
+  #require 'memcachier'
   $cache = Dalli::Client.new
   use Rack::Cache,
     :verbose => true,

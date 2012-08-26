@@ -44,7 +44,6 @@ GEM
     liquid (2.4.1)
     maruku (0.6.0)
       syntax (>= 1.0.0)
-    memcachier (0.0.1)
     mime-types (1.19)
     netrc (0.7.7)
     newrelic_rpm (3.4.1)
@@ -76,7 +75,6 @@ DEPENDENCIES
   heroku
   kramdown
   liquid
-  memcachier
   newrelic_rpm
   pygmentize
   rack

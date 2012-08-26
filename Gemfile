@@ -16,4 +16,4 @@ gem 'newrelic_rpm'    #for poor stats
 gem 'rack-cache'
 #gem 'rack-contrib'
 gem 'dalli'           #for mecahce
-gem 'memcachier'
+#gem 'memcachier'
