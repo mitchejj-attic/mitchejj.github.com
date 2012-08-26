@@ -52,6 +52,8 @@ GEM
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
+    rack-contrib (1.1.0)
+      rack (>= 0.9.1)
     raindrops (0.10.0)
     rake (0.9.2.2)
     rest-client (1.6.7)
@@ -79,6 +81,7 @@ DEPENDENCIES
   pygmentize
   rack
   rack-cache
+  rack-contrib
   rack-jekyll!
   rake
   unicorn
