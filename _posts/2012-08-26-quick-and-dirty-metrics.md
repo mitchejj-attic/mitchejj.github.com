@@ -26,3 +26,6 @@ I made the following addition to `config.ru`
 To test that caching is working use `ab` aka Apache HTTP server benchmarking tool and run `ab -n 1000 -c 5 <hostname>`
 	
 This will make 1000 requst to <hostname> with 5 concurrent request.
+
+	curl -I -H "Accept-Encoding: gzip,deflate"
+{:lang="text"}

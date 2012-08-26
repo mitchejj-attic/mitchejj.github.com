@@ -14,6 +14,6 @@ gem "heroku"              # if you install the Heroku Toolbelt you won't need th
 gem 'unicorn'			# our server of chice
 gem 'newrelic_rpm'    #for poor stats
 gem 'rack-cache'
-gem 'rack-contrib'
+#gem 'rack-contrib'
 gem 'dalli'           #for mecahce
 gem 'memcachier'
