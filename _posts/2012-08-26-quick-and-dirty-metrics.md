@@ -8,7 +8,7 @@ tags: []
 {% include JB/setup %}
 Now that I have github -> heroku publishing in place now is the time to setup even more over kill, heroku offers a few (2)5 MB Memcache Bucket.
 
-I made the following addition to `config.ru`
+I made the following changes to `config.ru`
 		
 		if memcache_servers = ENV["MEMCACHE_SERVERS"]
 			require 'dalli'
