@@ -10,8 +10,7 @@ gem	"rack-jekyll", :git => 'https://github.com/adaoraul/rack-jekyll.git', :requi
 gem "liquid"
 
 ##### Add-ons for Jekyll
-gem "RedCloth"            # if you want to use the Textile Markup Language
-#gem "kramdown"            # i wish to use kramdown
+gem "kramdown"            # i wish to use kramdown
 gem "coderay"
 
 #### For the Server
@@ -23,10 +22,5 @@ gem 'rack-cache'
 gem 'dalli'           #for mecahce
 gem 'memcachier'
 gem 'newrelic_rpm'    #for poor stats
-
-
-#gem "pygmentize"
-#gem "foreman"             # this is a tool to test and use the Procfile locally
-#gem "heroku"              # if you install the Heroku Toolbelt you won't need this but it's good practice
 
 
