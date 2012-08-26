@@ -12,7 +12,7 @@ I made the following addition to `config.ru`
 		
 		require 'dalli'
 		require 'rack-cache'
-		require 'memcachier'
+		#require 'memcachier'
 		...
 		if memcache_servers = ENV["MEMCACHE_SERVERS"]
 			$cache = Dalli::Client.new
@@ -27,5 +27,5 @@ To test that caching is working use `ab` aka Apache HTTP server benchmarking too
 	
 This will make 1000 requst to <hostname> with 5 concurrent request.
 
-	curl -I -H "Accept-Encoding: gzip,deflate"
+		curl -I -H "Accept-Encoding: gzip,deflate"
 {:lang="text"}
