@@ -50,8 +50,8 @@ GEM
     posix-spawn (0.3.6)
     pygmentize (0.0.3)
     rack (1.4.1)
-    rack-contrib (1.1.0)
-      rack (>= 0.9.1)
+    rack-cache (1.2)
+      rack (>= 0.4)
     raindrops (0.10.0)
     rake (0.9.2.2)
     rest-client (1.6.7)
@@ -78,7 +78,7 @@ DEPENDENCIES
   newrelic_rpm
   pygmentize
   rack
-  rack-contrib
+  rack-cache
   rack-jekyll!
   rake
   unicorn
