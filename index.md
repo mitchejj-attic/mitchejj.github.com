@@ -30,3 +30,6 @@ I love many aspects of my current job, in the end it doesn’t leave me satisfie
 
 #### A new leaf
 Going forward I hope to find a new word life balance.
+
+#### Less than Beta Quality
+This here will be my playground. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
