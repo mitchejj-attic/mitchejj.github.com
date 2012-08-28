@@ -1,13 +1,7 @@
 ---
 layout: page
-title: "Blog"
-description: ""
+title: "blog"
+description: "guesstimating abnormality"
 ---
 {% include JB/setup %}
-<ul class="post">
-{% for post in site.posts limit:4  %}
-<h1>{{ post.title }}</h1>
-{{ post.content }}
-<hr/>
-{% endfor  %}
-</ul>
+{% include stderr/blog %}
