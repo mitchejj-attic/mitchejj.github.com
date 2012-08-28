@@ -29,7 +29,7 @@ Over the last few weeks I’ve been in deep personal reflection, I need a change
 I love many aspects of my current job, in the end it doesn’t leave me satisfied like it used to. I started at my current job 10 years ago, at that time I knew it wasn’t something I wanted to do long term. Over time it became comfortable, while I found new ways to justify to myself why I should stay. It is time to move on, I need to start scrapping away that rust and engage in the tech community again.
 
 #### A new leaf
-Going forward I hope to find a new word life balance.
+Going forward I hope to find a new word life balance. It is my intention going forward to spend atleast an hour every other day mucking about on this "project"
 
 #### Less than Beta Quality
 This here will be my playground. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
