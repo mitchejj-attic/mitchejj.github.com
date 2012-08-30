@@ -1,0 +1,10 @@
+---
+layout: page
+title : "stderr | log"
+header : the blog
+group: navigation
+---
+{% for post in site.posts limit: 5  %}
+	{% include stderr/io %}
+{% endfor  %}
+{% assign page.tags ==  %}

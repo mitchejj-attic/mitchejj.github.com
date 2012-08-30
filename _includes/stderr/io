@@ -1,0 +1,17 @@
+<article>
+	<header class="post-header">
+		<h2>{{ post.title }} <a href="{{ BASE_PATH }}{{ post.url }}"> <small><i class="icon-link" icon-large>
+</i></small></a></h2>
+		<p>Published: <small><time pubdate datetime="{{ post.date }}">{{ post.date | date_to_long_string }}</time></small></p>
+		{% if post.via or post.viaURL %}{% if post.via != empty and post.viaURL != empty %}
+		<p>via: <a href="{{ post.viaURL }}" title="{{ post.via }}">{{ post.via }}</a></p>
+	{% elsif post.via == empty and post.viaURL != empty%}
+		<p>via: <a href="{{ post.viaURL }}">{{ post.viaURL }}</a></p>
+	{% else %}error{% endif %}
+{% endif %}
+	</header>
+	<section class="post">
+		{{ post.content }}
+	</section>
+</article>
+<hr>

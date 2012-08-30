@@ -12,4 +12,3 @@ viaURL: http://www.huffingtonpost.com/2012/03/28/who-runs-a-marathon_n_1385741.h
 {% include JB/setup %}
 something
 {% include stderr/img  %}
-{% include stderr/via  %}

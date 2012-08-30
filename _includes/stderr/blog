@@ -1,8 +1,6 @@
-<ul class="post">
 {% for post in site.posts limit: 5  %}
 <h1>{{ post.title }} <a href="{{ BASE_PATH }}{{ post.url }}"> <small><i class="icon-link" icon-large>
 </i></small></a></h1>
 {{ post.content }}
 <hr/>
 {% endfor  %}
-</ul>
