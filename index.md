@@ -32,4 +32,4 @@ I love many aspects of my current job, in the end it doesn’t leave me satisfie
 Going forward I hope to find a new word life balance. It is my intention going forward to spend atleast an hour every other day mucking about on this "project"
 
 #### Less than Beta Quality
-This here will be my playground. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
+This here will be my playground. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption. My main quality goal is to keep the site light and nimble.

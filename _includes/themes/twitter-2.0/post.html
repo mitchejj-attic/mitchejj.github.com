@@ -1,45 +1,44 @@
-<div class="page-header">
-  <h1>{{ page.title }} <small>{{ page.description }}</small></h1>
+<!--Max Span is 9-->
+<article>
+	<header class="post-header">
+		<h1>{{ page.title }} <small>{{ page.description }}</small></h1>
+		<p>Published: <small><time pubdate datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time></small></p>
+{% if page.via or page.viaURL %}{% if page.via != empty and page.viaURL != empty %}
+		<p>via: <a href="{{ page.viaURL }}" title="{{ page.via }}">{{ page.via }}</a></p>
+	{% elsif page.via == empty and page.viaURL != empty%}
+		<p>via: <a href="{{ page.viaURL }}">{{ page.viaURL }}</a></p>
+	{% else %}error{% endif %}
+{% endif %}
+
+	</header>
+	<section class="post">
+		{{ content }}
+	</section>
+</article>
+<hr>
+{% unless page.tags == empty %}
+
+<h4>Tags</h4>
+<ul class="tag_box">
+{% assign tags_list = page.tags %}
+{% include JB/tags_list %}
+</ul>
+<hr>
+{% endunless %}
+<div class="pagination pagination-centered">
+	<ul>
+	{% if page.previous %}
+	<li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
+	{% else %}
+	<li class="prev disabled"><a>&larr; Previous</a></li>
+	{% endif %}
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+	{% if page.next %}
+	<li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
+	{% else %}
+	<li class="next disabled"><a>Next &rarr;</a>
+	{% endif %}
+	</ul>
 </div>
 
-<div class="row">
-  <div class="span8">
-    {{ content }}
-    <hr>
-    <div class="pagination">
-      <ul>
-      {% if page.previous %}
-        <li class="prev"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
-      {% else %}
-        <li class="prev disabled"><a>&larr; Previous</a></li>
-      {% endif %}
-        <li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
-      {% if page.next %}
-        <li class="next"><a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a></li>
-      {% else %}
-        <li class="next disabled"><a>Next &rarr;</a>
-      {% endif %}
-      </ul>
-    </div>
-  </div>
-
-  <div class="span4">
-    <h4>Published</h4>
-    <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
-
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}
-  </div>
-</div>
-
-<div class="row">
-  <div class="span8">
-    <hr>
-    {% include JB/comments %}
-  </div>
-</div>
+  {% include JB/comments %}

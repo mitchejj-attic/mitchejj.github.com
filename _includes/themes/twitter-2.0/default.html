@@ -8,6 +8,7 @@
 	{% if site.author.name %}<meta name="designer" content="{{ site.author.name }}; {% if site.author.twitter %}@{{ site.author.twitter }}{% endif %}">{% endif %}
 	<meta name="generator" content="Jekyll">
 	
+	
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
     <!--[if lt IE 9]>
@@ -20,13 +21,16 @@
         padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
       }
     </style>
-    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-responsive.min.css" rel="stylesheet">
-    <link href="{{ ASSET_PATH }}/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/css/bootstrap-responsive.min.css" rel="stylesheet">
+	
 	<link href="http://netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
-<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+	
+	<link rel="alternate" type="application/rss+xml" href="/atom.xml" />
   </head>
 
   <body>
+  	<!-- Nav Unit -->
     <div class="navbar navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
@@ -46,23 +50,24 @@
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="content">
-        {{ content }}        
-      </div>
-
-      <footer>
-        <p>
-			<br>
-		  Copyright &copy; 2012 {{ site.author.name }}
-        </p>
-        
-      </footer>
-
-    </div> <!-- /container -->
-
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"><\/script>')</script>
+    <!-- End Nav Unit -->
+<div class="container-fluid mainContainer">
+	<div class="row-fluid contentContainer">
+		<div class="span9"><!--Body content-->
+			{{ content }} 
+		</div>
+		<div class="span3 sideRail"> <!--Sidebar content-->
+			This is the side bar!
+		</div>
+	</div>
+	<footer>
+		<p><br>
+			Copyright &copy; 2012 {{ site.author.name }}
+		</p>
+	</footer>
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"><\/script>')</script>
     <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"></script>
     {% include JB/analytics %}
   </body>
