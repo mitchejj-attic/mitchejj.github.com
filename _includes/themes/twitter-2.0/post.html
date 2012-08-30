@@ -1,6 +1,6 @@
 <!--Max Span is 9-->
 <article>
-	<header class="post-header">
+	<header class="page-header">
 		<h1>{{ page.title }} <small>{{ page.description }}</small></h1>
 		<p>Published: <small><time pubdate datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time></small></p>
 {% if page.via or page.viaURL %}{% if page.via != empty and page.viaURL != empty %}
@@ -9,7 +9,6 @@
 		<p>via: <a href="{{ page.viaURL }}">{{ page.viaURL }}</a></p>
 	{% else %}error{% endif %}
 {% endif %}
-
 	</header>
 	<section class="post">
 		{{ content }}
@@ -17,7 +16,6 @@
 </article>
 <hr>
 {% unless page.tags == empty %}
-
 <h4>Tags</h4>
 <ul class="tag_box">
 {% assign tags_list = page.tags %}
