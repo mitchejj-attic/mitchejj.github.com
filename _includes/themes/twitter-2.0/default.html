@@ -67,10 +67,11 @@
 	<div class="row-fluid">
 
 		<div class="span3">
-		 &nbsp;
+		&nbsp;
 		</div>
 		<div class="span3 offset5">
-			<small>Copyright &copy; 2012 {% if site.author.twitter %}<a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a>, {% endif %}{{ site.author.name }}</small>
+			<p><small><em>Generated: {{ 'now' | date: "%Y-%m-%d %I:%M:%S %p"  }}</em></small><br>
+			<small>Copyright &copy; 2012 {% if site.author.twitter %}<a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a>, {% endif %}{{ site.author.name }}</small></p>
 		</div>
 	</div>
 	</footer>
