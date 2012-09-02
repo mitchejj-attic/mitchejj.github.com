@@ -1,15 +1,15 @@
 <article>
-	<header class="post-header">
-		<h2>{{ post.title }} <a href="{{ BASE_PATH }}{{ post.url }}"> <small><i class="icon-link">
-</i></small></a></h2>
-		<p>Published: <time class="pubdate" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d %Y" }}</time></p>
-		{% if post.via or post.viaURL %}{% if post.via != empty and post.viaURL != empty %}
-		<p>via: <a href="{{ post.viaURL }}" title="{{ post.via }}">{{ post.via }}</a></p>
-	{% elsif post.via == empty and post.viaURL != empty%}
-		<p>via: <a href="{{ post.viaURL }}">{{ post.viaURL }}</a></p>
-	{% else %}error{% endif %}
-{% endif %}
-	</header>
+	<hgroup>
+		<header class="post-header">
+			<h2>{{ post.title }} <small>{{ post.description }}</small></h2>
+			<h3></h3>
+			<h4><small>Published: <time class="pubdate" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d %Y" }}</time> <a href="{{ BASE_PATH }}{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
+			{% if post.via or post.viaURL %}<br> via:
+				{% if post.via != empty and post.viaURL != empty %} 	<a href="{{ post.viaURL }}" title="{{ post.via }}">{{ post.via }}</a>
+				{% elsif post.via == empty and post.viaURL != empty%}	<a href="{{ post.viaURL }}">{{ post.viaURL }}</a>	{% else %}error{% endif %}{% endif %}
+			</small></h4>
+		</header>
+	</hgroup>
 	<section class="post">
 		{{ post.content }}
 	</section>

@@ -8,7 +8,7 @@ This here is the canonical source or is it the canonical store for my site, [Sta
 Now. Well, actually, since August 2012.
 
 ### Where
-Here! More specifically, gitHub then on to heroku.
+Here! More specifically, github then on to heroku.
 
 ### Why
 Granted my hosting set-up is over kill, and I have no good reason for it other than a because I can.

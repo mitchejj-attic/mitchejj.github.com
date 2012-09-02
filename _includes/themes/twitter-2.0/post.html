@@ -1,15 +1,15 @@
 <!--Max Span is 9-->
 <article>
-	<header class="page-header">
-		<h1>{{ page.title }} <small>{{ page.description }}</small></h1>
-		<p>Published: <small><time pubdate datetime="{{ page.date }}">{{ page.date | date_to_long_string }}</time></small></p>
-{% if page.via or page.viaURL %}{% if page.via != empty and page.viaURL != empty %}
-		<p>via: <a href="{{ page.viaURL }}" title="{{ page.via }}">{{ page.via }}</a></p>
-	{% elsif page.via == empty and page.viaURL != empty%}
-		<p>via: <a href="{{ page.viaURL }}">{{ page.viaURL }}</a></p>
-	{% else %}error{% endif %}
-{% endif %}
-	</header>
+	<hrgroup>
+		<header class="page-header">
+			<h1>{{ page.title }} <small>{{ page.description }}</small></h1>
+			<h4><small>Published: <time class="pubdate" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d %Y" }}</time>
+			{% if page.via or page.viaURL %}<br>via:
+				{% if page.via != empty and page.viaURL != empty %}		<a href="{{ page.viaURL }}" title="{{ page.via }}">{{ page.via }}</a>
+				{% elsif page.via == empty and page.viaURL != empty%}	<a href="{{ page.viaURL }}">{{ page.viaURL }}</a>	{% else %}error{% endif %}{% endif %}
+			</small></h4>
+		</header>
+	</hrgroup>
 	<section class="post">
 		{{ content }}
 	</section>
