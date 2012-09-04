@@ -4,9 +4,10 @@ title: Standard Error
 tagline: guesstimating abnormality
 ---
 {% include JB/setup %}
-### The Manifesto  of Proclamation
+### whoami
+I'm Jason and this is my new online dwelling. I graduated [Grand Valley State Universtiy](http://gvsu.edu) with a degree in Coumputer Science. I however, have not put my degree to any use since graduation. Instead I opted to work for [Panera Bread](http://panerabread.com). Thanks to this experience learned a lot and grown as an individual. Here will live digital workspace and playground. I will share personal thoughts, refine my writing style an explore different technologies and methodologies. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
 
-A year a go I wanted to find an escape from my Google dependency. The first step was finding a way of Google Mail (gMail). I ran many ideas thru my Domain Register of choice (hover.net), nothing stuck. I wanted something short and easy to type. I wanted something to tie in with both my geek side and my emerging heath consciousness. I eventually settled on stderr.me.
+A year a go I wanted to find an escape from my Google dependency. The first step was to move away from Google Mail (gMail). I ran many ideas thru my Domain Register of choice [hover.com](https://www.hover.com/), nothing that resonated with me was avaiable. I had a few requirments, and I don't think any where all that unreasonable. I wanted something short URL that could tie into both my geek side and my emerging heath consciousness. I eventually settled on [stderr.me](http://stderr.me).
 
 	stderr == Standard Error
 
@@ -22,11 +23,6 @@ Once I partially migrated away from Google I felt need to have a web presence ye
 #### Search
 Like I said I wanted to move away from Google, and I found the perfect replacement DuckDuckGo.
 
-
-#### A perfect storm
-Over the last few weeks I’ve been in deep personal reflection, I need a change in life.
-
-I love many aspects of my current job, in the end it doesn’t leave me satisfied like it used to. I started at my current job 10 years ago, at that time I knew it wasn’t something I wanted to do long term. Over time it became comfortable, while I found new ways to justify to myself why I should stay. It is time to move on, I need to start scrapping away that rust and engage in the tech community again.
 
 #### A new leaf
 Going forward I hope to find a new word life balance. It is my intention going forward to spend atleast an hour every other day mucking about on this "project"
