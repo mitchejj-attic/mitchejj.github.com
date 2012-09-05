@@ -5,14 +5,17 @@ tagline: guesstimating abnormality
 ---
 {% include JB/setup %}
 ### whoami
-I'm Jason and this is my new online dwelling. I graduated [Grand Valley State Universtiy](http://gvsu.edu) with a degree in Coumputer Science. I however, have not put my degree to any use since graduation. Instead I opted to work for [Panera Bread](http://panerabread.com). Thanks to this experience learned a lot and grown as an individual. Here will live digital workspace and playground. I will share personal thoughts, refine my writing style an explore different technologies and methodologies. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
+I'm Jason and this is my new online dwelling. I graduated [Grand Valley State University](http://gvsu.edu) with a degree in Computer Science. I however, have not put my degree to any use since graduation. Instead I opted to work for [Panera Bread](http://panerabread.com). Thanks to this experience learned a lot and grown as an individual. Here will live digital workspace and playground. I will share personal thoughts, refine my writing style and explore different technologies and methodologies. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
 
-A year a go I wanted to find an escape from my Google dependency. The first step was to move away from Google Mail (gMail). I ran many ideas thru my Domain Register of choice [hover.com](https://www.hover.com/), nothing that resonated with me was avaiable. I had a few requirments, and I don't think any where all that unreasonable. I wanted something short URL that could tie into both my geek side and my emerging heath consciousness. I eventually settled on [stderr.me](http://stderr.me).
+Sometime in the summer of 2011 I wanted to find an escape from my Google dependency. The first step was to move away from Google Mail (gMail), with that change I wanted to use my own domain. I wanted a short URL that could tie into both my geek side and my emerging heath consciousness, nothing unreasonable. I ran many ideas thru my Domain Register of choice [hover.com](https://www.hover.com/), nothing resonated with until [stderr.me](http://stderr.me).
 
 	stderr == Standard Error
 
+stderr.me has now become my "personal brand," and honestly I don't think it is all that ideal to brand oneself as a standard error. However, it works.. for now. 
+
+
 #### Why?
-Well a few reasons. First, we all have ‘errors’ in our daily lives. They could be technology related, heath related or just our personalties. I order to resolve these errors they need to be exposed to the world. Second, the me domain was cheap.
+Well, a few reasons. First, we all have ‘errors’ in our daily lives. They could be technology related, heath related or just our personalties. I order to resolve these errors they need to be exposed to the world. Second, the me domain was cheap.
 
 #### Servers
 With my new domain name in hand I went shopping for an email provider. I didn’t really like any of the choice. They all worked but nothing really stood out. I’m not a heavy email user, and I just don’t want spam in my inbox. In the back of my mind I knew I had a ‘lifetime’ shared hosting account from Joyent. A very cheap option, but what about spam? I heard many ads about mailroute.net being very good eliminating spam. A yearly account for 1 address is the same price the other solutions cost, plus I had a 10% off coupon code for the life of my plan.
