@@ -56,10 +56,21 @@
 			{{ content }} 
 		</div>
 		<div class="span3 sideRail"> <!--Sidebar content-->
+			<aside class="search">
 			<form action="http://duckduckgo.com/" class="form-search">
 				<input type="text" name="q"  class="input-medium search-query" placeholder="search" />
 				<input type="hidden" name="t" value="stderr.me"/>
 			</form>
+			<hr>
+			</aside>
+			{% if page.tags and page.tags != empty %}<aside class="tagBox">
+			<h5>Tags</h5>
+				<ul class="tag_box">
+				{% assign tags_list = page.tags %}
+				{% include JB/tags_list %}
+			</ul>
+			<hr>
+			</aside>{% endif %}
 		</div>
 	</div>
 </div>

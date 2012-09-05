@@ -15,14 +15,6 @@
 	</section>
 </article>
 <hr>
-{% unless page.tags == empty %}
-<h4>Tags</h4>
-<ul class="tag_box">
-{% assign tags_list = page.tags %}
-{% include JB/tags_list %}
-</ul>
-<hr>
-{% endunless %}
 <div class="pagination pagination-centered">
 	<ul>
 	{% if page.previous %}
