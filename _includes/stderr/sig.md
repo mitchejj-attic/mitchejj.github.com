@@ -1,1 +1,0 @@
-Generated: {{ 'now' | date: "%c" }}

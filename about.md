@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Standard Error
+title: about
 tagline: guesstimating abnormality
+group: navigation
 ---
 {% include JB/setup %}
 ### whoami

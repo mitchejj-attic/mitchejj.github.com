@@ -1,6 +1,6 @@
 source :rubygems
 
-##### Basic Set up for rake
+##### Basic Set up for rack
 gem	'rack'
 
 ##### Add Jekyll

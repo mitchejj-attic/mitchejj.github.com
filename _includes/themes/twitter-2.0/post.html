@@ -8,6 +8,9 @@
 				{% if page.via != empty and page.viaURL != empty %}		<a href="{{ page.viaURL }}" title="{{ page.via }}">{{ page.via }}</a>
 				{% elsif page.via == empty and page.viaURL != empty%}	<a href="{{ page.viaURL }}">{{ page.viaURL }}</a>	{% else %}error{% endif %}{% endif %}
 			</small></h4>
+			<h6>{% for tag in page.tags %}
+	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="label label-info">{{ tag }}</a>
+{% endfor %}</h6>
 		</header>
 	</hrgroup>
 	<section class="post">
