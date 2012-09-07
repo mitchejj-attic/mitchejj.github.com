@@ -6,11 +6,12 @@ description: ""
 {% include JB/setup %}
 
 I would just like to record someplace a thank you roll for pages/links and sites I found useful.
+{: .list1__________over}
 
 * ;)
 {:toc}
 
-###For Jekyll Deployment & Development					{#jekyll-intro}
+###For Jekyll Deployment & Development					{: #jekyll-intro}
 * [Jekyll vs. Hyde - A Comparison Of Two Static Site Generators](http://philipm.at/2011/0507/)
 * [gist: 227621 -- Pagination in Jekyll](https://gist.github.com/227621)
 * [octopress](https://github.com/imathis/octopress)
@@ -24,6 +25,7 @@ I would just like to record someplace a thank you roll for pages/links and sites
 * [Jekyll: Pagination, Archives, and Excerpts](http://www.bencurtis.com/2011/05/jekyll-pagination-archives-and-excerpts/)
 * [Generating Jekyll Pages With Pagination](http://www.nearinfinity.com/blogs/brandon_marc_aurele/2012/06/14/generating-jekyll-pages-with-pagination.html)
 * [Jekyll Bootstrap Filters](http://www.thomas.stachl.me/blog/2012/05/27/jekyll-bootstrap-filter.html)
+{: .list1__________over}
 
 ### for layout															{#layout}
 * [Template Data Api](http://jekyllbootstrap.com/api/template-data-api.html)
