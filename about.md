@@ -1,6 +1,6 @@
 ---
 layout: default
-title: about
+title: Bio
 tagline: guesstimating abnormality
 group: navigation
 ---

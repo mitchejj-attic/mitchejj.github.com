@@ -13,7 +13,7 @@
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<!-- Le styles -->
-	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
 	<style type="text/css" media="screen and (max-width: 767px)"></style>
 	<style type="text/css" media="screen and (min-width: 980px)">
 		body {
@@ -28,6 +28,23 @@
 		}
 		.mainContainer {
 			background: white;
+			
+		}
+		.contentContainer {
+			border-right: 1px outset #f8f8f8
+		}
+		.theContent {
+			padding-right: 8px;
+		}
+		.about img {
+			float:left;
+			margin:0 8px 8px 0;
+
+		}
+		.about {
+			text-align:left;
+		}
+		.sideRail {
 		}
 	</style>
 	<style type="text/css" media="screen">
@@ -62,18 +79,23 @@
     </div>
     <!-- End Nav Unit -->
 <div class="container-fluid mainContainer">
-	<div class="row-fluid contentContainer">
-		<div class="span9"><!--Body content-->
-			{{ content }} 
+	<div class="row-fluid">
+		<div class="span9 contentContainer"><!--Body content-->
+			<div class="theContent">
+			{{ content }}
+			</div>
 		</div>
 		<div class="span3 sideRail"> <!--Sidebar content-->
-			<aside class="search">
+					<aside class="search">
 			<form action="http://duckduckgo.com/" class="form-search">
 				<input type="text" name="q"  class="input-medium search-query" placeholder="search" />
 				<input type="hidden" name="t" value="stderr.me"/>
 			</form>
 			<br>
 			</aside>
+			<p class="about">
+			<img src="http://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=128" width="128" height="128" alt="me" class="img-circle" /> This is the weblog of <a href="{{ site.production_url }}/about">{{ site.author.name }}</a>; a manager at Panera Bread, a graduate of Grand Valley State University with a degree in Computer Science, a geek and a runner. The basic idea of this space is to create a playground where I may share my thoughts and experiences.</p>
+
 			{% if page.tags == false and page.tags == empty %}			
 			<aside class="tagBox">
 			<h5>Site Tags:</h5>
