@@ -14,14 +14,25 @@
 	<![endif]-->
 	<!-- Le styles -->
 	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<style type="text/css" media="screen and (max-width: 767px)"></style>
 	<style type="text/css" media="screen and (min-width: 980px)">
 		body {
-			padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
+			background: #3d3d3d;
+			margin-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+			border-top: 20px solid white;
+			color: #2F2F2F;
+			
+		}
+		footer {
+			color: #e9eaee;
+		}
+		.mainContainer {
+			background: white;
 		}
 	</style>
 	<style type="text/css" media="screen">
 	footer {
-		border-top: 1px outset #a6a6a6;
+		border-top: 1px outset #f8f8f8;
 		}
 	</style>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
@@ -61,7 +72,7 @@
 				<input type="text" name="q"  class="input-medium search-query" placeholder="search" />
 				<input type="hidden" name="t" value="stderr.me"/>
 			</form>
-			<hr>
+			<br>
 			</aside>
 			{% if page.tags == false and page.tags == empty %}			
 			<aside class="tagBox">
@@ -91,7 +102,7 @@
 	</div>
 	</footer>
 
-<script async src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script async src="//code.jquery.com/jquery-1.8.1.min.js"></script>
 <script>window.jQuery || document.write('<script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"><\/script>')</script>
     <script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.0/js/bootstrap.min.js"></script>
     {% include JB/analytics %}
