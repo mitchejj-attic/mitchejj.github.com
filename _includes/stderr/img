@@ -14,5 +14,5 @@
 			{% assign IMG_CAP = '' %}
 		{% endif %}
 	{% endif %}		
-<div class="image" markdown="1"><figure><img src="{{ IMG_URL }}" class="img-rounded"><figcaption><br>{{ IMG_CAP }}</figcaption></figure></div>
+<div class="image" markdown="1"><figure><img src="{{ IMG_URL }}" class="img-rounded img-post"><figcaption><br>{{ IMG_CAP }}</figcaption></figure></div>
 {% endif %}
