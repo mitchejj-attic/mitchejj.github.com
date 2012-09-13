@@ -1,5 +1,18 @@
-
-
-<div class="image" markdown="1">
-<figure><img src="{{ page.imgURL }}" class="img-rounded"><figcaption><br>{{page.imgCap}}</figcaption></figure>
-</div>
+{% if page.imgURL != empty or post.viaURL != empty %}
+	{% if page.imgURL != empty %}
+		{% assign IMG_URL = page.imgURL %}
+		{% if page.imgCap != empty %}
+			{% assign IMG_CAP = page.imgCap %}
+		{% else %}
+			{% assign IMG_CAP = nil %}
+		{% endif %}	
+	{% else %}
+		{% assign IMG_URL = post.imgURL %}
+		{% if post.imgCap != empty %}
+			{% assign IMG_CAP = post.imgCap %}
+		{% else %}
+			{% assign IMG_CAP = '' %}
+		{% endif %}
+	{% endif %}		
+<div class="image" markdown="1"><figure><img src="{{ IMG_URL }}" class="img-rounded"><figcaption><br>{{ IMG_CAP }}</figcaption></figure></div>
+{% endif %}
