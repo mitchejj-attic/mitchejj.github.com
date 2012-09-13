@@ -4,8 +4,8 @@ title: "test_video"
 description: ""
 category: test
 tags: []
-
-via:
-viaURL:
+source:
+   url:
+   title:
 ---
 {% include JB/setup %}

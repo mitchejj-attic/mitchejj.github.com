@@ -1,15 +1,15 @@
-{% if page.imgURL != empty or post.viaURL != empty %}
-	{% if page.imgURL != empty %}
-		{% assign IMG_URL = page.imgURL %}
-		{% if page.imgCap != empty %}
-			{% assign IMG_CAP = page.imgCap %}
+{% if page.image.url != empty or post.image.url != empty %}
+	{% if page.image.url != empty %}
+		{% assign IMG_URL = page.image.url %}
+		{% if page.image.caption != empty %}
+			{% assign IMG_CAP = page.image.caption %}
 		{% else %}
 			{% assign IMG_CAP = nil %}
 		{% endif %}	
 	{% else %}
-		{% assign IMG_URL = post.imgURL %}
-		{% if post.imgCap != empty %}
-			{% assign IMG_CAP = post.imgCap %}
+		{% assign IMG_URL = post.image.url %}
+		{% if post.image.caption != empty %}
+			{% assign IMG_CAP = post.image.caption %}
 		{% else %}
 			{% assign IMG_CAP = '' %}
 		{% endif %}

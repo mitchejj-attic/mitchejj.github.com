@@ -4,9 +4,9 @@
 		<header class="page-header">
 			<h1>{{ page.title }} <small>{{ page.description }}</small></h1>
 			<h4><small>Published: <time class="pubdate" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%b %d %Y" }}</time>
-			{% if page.via or page.viaURL %}<br>via:
-				{% if page.via != empty and page.viaURL != empty %}		<a href="{{ page.viaURL }}" title="{{ page.via }}">{{ page.via }}</a>
-				{% elsif page.via == empty and page.viaURL != empty%}	<a href="{{ page.viaURL }}">{{ page.viaURL }}</a>	{% else %}error{% endif %}{% endif %}
+			{% if page.source.url  %}<br>via:
+				{% if page.source.url != empty and page.source.title != empty %}	<a href="{{ page.source.url }}" title="{{ page.source.title }}">{{ page.source.title }} {{ page.source.title | size }}</a>
+				{% elsif page.source.url != empty and page.source.title == empty %}	<a href="{{ page.source.url }}" title="123">{{ page.source.url }}</a>	{% else %}error{% endif %}{% endif %}
 			</small></h4>
 			<h6>{% for tag in page.tags %}
 	<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="label label-info">{{ tag }}</a>
