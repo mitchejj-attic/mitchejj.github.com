@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Create a Post or Page"
-description: ""
+description:
 category: 
 tags: []
 ---

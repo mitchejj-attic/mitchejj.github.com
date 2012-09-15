@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "github to heroku deplyment"
-description: ""
+description:
 category: blog
 tags: [heroku, github, meta]
 ---

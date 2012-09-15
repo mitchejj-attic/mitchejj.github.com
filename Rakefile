@@ -62,15 +62,16 @@ task :post do
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "category: "
+    post.puts "description:"
+    post.puts "category:"
     post.puts "tags: []"
     post.puts "source:"
     post.puts "   url:"
-    post.puts '   title: ""'
+    post.puts "   title:"
+    post.puts "llist:"
     post.puts "image:"
     post.puts "   url:"
-    post.puts '   caption: ""'
+    post.puts "   caption:"
     post.puts "---"
     post.puts "{% include JB/setup %}"
     post.puts "{% include stderr/setup %}"

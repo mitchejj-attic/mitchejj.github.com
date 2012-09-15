@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "test_quote"
-description: ""
+description:
 category: test
 tags: []
 source:

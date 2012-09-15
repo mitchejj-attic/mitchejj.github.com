@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Running Check List"
-description: ""
+description:
 category: blog 
 tags: [running]
 source:
@@ -9,7 +9,7 @@ source:
    title: "@brooksrunning"
 image:
    url: https://www.strongspace.com/shared/yaeqregpre/img/Race_Day_Checklist.jpg
-   caption: ""
+   caption:
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
