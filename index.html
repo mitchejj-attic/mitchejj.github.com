@@ -4,6 +4,7 @@ title : "stderr | log"
 header : Standard Error, the blog
 ---
 {% for post in site.posts limit: 5  %}
+	{% include stderr/setup %}
 	{% include stderr/io %}
 	<hr>
 {% endfor  %}

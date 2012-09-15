@@ -1,15 +1,16 @@
+{% include stderr/setup %}
 <article>
 	<hgroup>
 		<header class="post-header">
-			<h2>{{ post.title }} <small>{{ post.description }}</small></h2>
-			<h4><small>Published: <time class="pubdate" datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%b %d %Y" }}</time> <a href="{{ BASE_PATH }}{{ post.url }}" class="permalink"><i class="icon-link"></i></a>
-			{% if post.source.url  %}<br>via:
-				{% if post.source.url != empty and post.source.title != empty %}	<a href="{{ post.source.url }}" title="{{ post.source.title }}">{{ post.source.title }}</a>
-				{% elsif post.source.url != empty and post.source.title == empty %}	<a href="{{ post.source.url }}" title="">{{ post.source.url }}</a>	{% else %}error{% endif %}{% endif %}			</small></h4>
-			<h6>{% for tag in post.tags %} <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="label label-info">{{ tag }}</a> {% endfor %}</h6>
+			<h2>{{ _TITLE_  | titlecase }} <small>{{ _DESC_ }}</small></h2>
+			<h4><small>Published: <time class="pubdate" datetime="{{ _DATE_ | date: "%Y-%m-%d" }}">{{ _DATE_ | date: "%b %d %Y" }}</time> <a href="{{ BASE_PATH }}{{ _URL_ }}" class="permalink"><i class="icon-link"></i></a>
+			{% if _SOURCE_.url  %}<br>via:
+				{% if _SOURCE_.url != empty and _SOURCE_.title != empty %}	<a href="{{ _SOURCE_.url }}" title="{{ _SOURCE_.title }}">{{ _SOURCE_.title  | titlecase }}</a>
+				{% elsif _SOURCE_.url != empty and _SOURCE_.title == empty %}	<a href="{{ _SOURCE_.url }}" title="">{{ _SOURCE_.url }}</a>	{% else %}error{% endif %}{% endif %}	</small></h4>
+			<h6>{% for tag in _TAGS_ %} <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="label label-info">{{ tag }}</a> {% endfor %}</h6>
 		</header>
 	</hgroup>
 	<section class="post">
-		{{ post.content }}
+		{{ _CONTENT_ }}
 	</section>
 </article>

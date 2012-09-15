@@ -1,18 +1,1 @@
-{% if page.image.url != empty or post.image.url != empty %}
-	{% if page.image.url != empty %}
-		{% assign IMG_URL = page.image.url %}
-		{% if page.image.caption != empty %}
-			{% assign IMG_CAP = page.image.caption %}
-		{% else %}
-			{% assign IMG_CAP = nil %}
-		{% endif %}	
-	{% else %}
-		{% assign IMG_URL = post.image.url %}
-		{% if post.image.caption != empty %}
-			{% assign IMG_CAP = post.image.caption %}
-		{% else %}
-			{% assign IMG_CAP = '' %}
-		{% endif %}
-	{% endif %}		
-<div class="image" markdown="1"><figure><img src="{{ IMG_URL }}" class="img-rounded img-post"><figcaption><br>{{ IMG_CAP }}</figcaption></figure></div>
-{% endif %}
+{% if _IMAGE_.url  %} <div class="image" markdown="1"><figure><img src="{{ _IMAGE_.url }}" class="img-rounded img-post"><figcaption><br>{{ _IMAGE_.caption }}</figcaption></figure></div> {% endif %}

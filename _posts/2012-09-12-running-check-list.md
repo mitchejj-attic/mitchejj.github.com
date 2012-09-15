@@ -13,3 +13,4 @@ image:
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
+{% include stderr/img  %}
