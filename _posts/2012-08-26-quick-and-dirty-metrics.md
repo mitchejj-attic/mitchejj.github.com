@@ -3,7 +3,7 @@ layout: post
 title: "quick and dirty metrics"
 description: "actually its about mcache"
 category:
-tags: []
+tags: [meta]
 ---
 {% include JB/setup %}
 Now that I have github -> heroku publishing in place now is the time to setup even more over kill, heroku offers a few (2)5 MB Memcache Bucket.

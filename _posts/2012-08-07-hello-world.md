@@ -3,7 +3,7 @@ layout: post
 title: "Hello World"
 description:
 category:
-tags: [meta]
+tags: [obligatory]
 ---
 {% include JB/setup %}
-Just another site, nothing to see here... move along... look lively and exit to the left.
+Nothing to see here, yet. Just another amoeba learning to walk, look lively as you exit on the left.

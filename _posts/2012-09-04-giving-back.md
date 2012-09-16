@@ -3,7 +3,7 @@ layout: post
 title: "Giving Back"
 description: "stackoverflow"
 category: 
-tags: [heroku, blog]
+tags: [heroku, jekyll]
 ---
 {% include JB/setup %}
 I the course of building and deploying this site one particular site has been truly helpful, Stack Overflow. Today I was finally able to give back and answer a fairly simple question that had me perplex when I first encountered it, [Jekyll on Heroku listing additional (internal?) posts I haven't created](http://stackoverflow.com/questions/12241403/jekyll-on-heroku-listing-additional-internal-posts-i-havent-created).

@@ -3,7 +3,7 @@ layout: post
 title: "Create a Post or Page"
 description:
 category: 
-tags: []
+tags: [jekyll]
 ---
 {% include JB/setup %}
 Why is it I can never remember:
