@@ -19,4 +19,4 @@
 		{% assign _SOURCE_ = page.source %}
 		{% assign _LLIST_ = page.llist %}
 		{% assign _IMAGE_ = page.image %}
-{% endif%}{% endcapture %}{% assign _SAVE_THE_SPACE_ = nil %}
+{% endif%}{% endcapture %}{% assign _SAVE_THE_SPACE_ = 0 %}

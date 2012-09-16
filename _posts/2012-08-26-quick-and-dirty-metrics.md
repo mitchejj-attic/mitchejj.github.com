@@ -2,7 +2,7 @@
 layout: post
 title: "quick and dirty metrics"
 description: "actually its about mcache"
-category: blog
+category:
 tags: []
 ---
 {% include JB/setup %}
@@ -24,7 +24,7 @@ I made the following changes to `config.ru`
 
 To test that caching is working use `ab` aka Apache HTTP server benchmarking tool and run `ab -n 500 -c 5 [hostname]`
 	
-This will make 500 requst to <hostname> with 5 concurrent request.
+This will make 500 requst to [hostname] with 5 concurrent request.
 
 And to see if `Rack::Deflater` is working
 

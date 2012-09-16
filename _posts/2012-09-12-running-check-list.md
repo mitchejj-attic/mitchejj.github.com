@@ -2,7 +2,7 @@
 layout: post
 title: "Running Check List"
 description:
-category: blog 
+category: 
 tags: [running]
 source:
    url: https://twitter.com/brooksrunning/statuses/246012898198032384
@@ -12,5 +12,4 @@ image:
    caption:
 ---
 {% include JB/setup %}
-{% include stderr/setup %}
 {% include stderr/img  %}

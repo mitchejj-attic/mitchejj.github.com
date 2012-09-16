@@ -2,7 +2,7 @@
 layout: post
 title: "Hello World"
 description:
-category: blog
+category:
 tags: [meta]
 ---
 {% include JB/setup %}
