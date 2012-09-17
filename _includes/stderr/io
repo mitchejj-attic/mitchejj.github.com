@@ -1,15 +1,14 @@
 <article>
 	<header>
 		<hgroup class="post-header">		{% include stderr/setup %}
-			<h2>{% if _LLIST_ %}<a href="{{ _LLIST_ }}">{{ _TITLE_  | titlecase }}</a>  <small>{{ _DESC_ }}</small></h2>
-			{% else %}{{ _TITLE_  | titlecase }} <small>{{ _DESC_ }}</small></h2>{% endif %}
-			<h4><small>Published: <time class="pubdate" datetime="{{ _DATE_ | date: "%Y-%m-%d" }}">{{ _DATE_ | date: "%b %d %Y" }}</time> <a href="{{ BASE_PATH }}{{ _URL_ }}" class="permalink"><i class="icon-link"></i></a>
-			{% if _SOURCE_.url  %}<br>via:
-				{% if _SOURCE_.title %}	<a href="{{ _SOURCE_.url }}" title="{{ _SOURCE_.title }}">{{ _SOURCE_.title  | titlecase }}</a>
-				{% else %}	<a href="{{ _SOURCE_.url }}">{{ _SOURCE_.url }}</a>{% endif %}{% endif %}</small></h4>
+			<h2>{% if _LLIST_ %}<a href="{{ _LLIST_ }}">{{ _TITLE_ }}</a> <small>{{ _DESC_ }} <a href="{{ BASE_PATH }}{{ _URL_ }}" class="permalink muted"><i class="icon-link"></i></a></small></h2>
+			{% else %}{{ _TITLE_ }}  <small>{{ _DESC_ }} <a href="{{ BASE_PATH }}{{ _URL_ }}" class="permalink muted"><i class="icon-link"></i></a></small></h2>{% endif %}
 		</hgroup>
-			<h6>{% for tag in _TAGS_ %} <a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}-ref" class="label label-info">{{ tag }}</a> {% endfor %}</h6>
-		
+		<div><small><i class="icon-calendar"></i> <time class="pubdate" datetime="{{ _DATE_ | date: "%Y-%m-%d" }}">{{ _DATE_ | date: "%b %d %Y" }}</time>
+			| {% for tag in _TAGS_ %}<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag }}" class="label">{{ tag }}</a> {% endfor %}
+			{% if _SOURCE_.url  %} | via: {% if _SOURCE_.title %}	<a href="{{ _SOURCE_.url }}" title="{{ _SOURCE_.title }}">{{ _SOURCE_.title }}</a>
+			{% else %}	<a href="{{ _SOURCE_.url }}">{{ _SOURCE_.url }}</a>{% endif %}{% endif %}</small>
+		</div>
 	</header>
 	<section class="post">
 		{{ _CONTENT_ }}

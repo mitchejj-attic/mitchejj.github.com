@@ -5,17 +5,41 @@ header: Posts By Tag
 group: navigation
 ---
 {% include JB/setup %}
+{% assign _B1_ =  site.tags %}
+<div class="tabbable">
+	<ul class="nav nav-tabs">
+	{% for tag in site.tags %}
+		{% if forloop.first %}
+			<li class="active"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+		{% else %}
+			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+	<div class="tab-content">
+		{% for tag in _B1_ %}
+			{% if forloop.first %}
+				<section class="tab-pane active" id="{{ tag[0] }}">
+				<p><ul>
+				{% for node in tag[1] %}
+					{% if node.title != null %}
+						<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
+				{% endfor %}
+				</ul></p>
+				</section>	
+			{% else %}
+				<section class="tab-pane" id="{{ tag[0] }}">
+				<p><ul>
+				{% for node in tag[1] %}
+					{% if node.title != null %}
+						<li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
+				{% endfor%}
+				</ul></p>
+				</section>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
 
-<ul class="tag_box inline">
-  {% assign tags_list = site.tags %}  
-  {% include JB/tags_list %}
-</ul>
-
-
-{% for tag in site.tags %} 
-  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
-  <ul>
-    {% assign pages_list = tag[1] %}  
-    {% include JB/pages_list %}
-  </ul>
-{% endfor %}
