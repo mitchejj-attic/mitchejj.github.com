@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 {% assign _B1_ =  site.tags %}
 <div class="tabbable">
-	<ul class="nav nav-tabs">
+	<ul class="nav nav-tabs"  id="_tags_">
 	{% for tag in site.tags %}
 		{% if forloop.first %}
 			<li class="active"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
@@ -17,11 +17,11 @@ group: navigation
 	{% endfor %}
 	</ul>
 	<div class="tab-content">
-		{% for tag in _B1_ %}
+		{% for item in _B1_ %}
 			{% if forloop.first %}
-				<section class="tab-pane active" id="{{ tag[0] }}">
+				<section class="tab-pane active" id="{{ item[0] }}">
 				<ul class="unstyled">
-				{% for node in tag[1] %}
+				{% for node in item[1] %}
 					{% if node.title != null %}
 						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 					{% endif %}
@@ -29,9 +29,9 @@ group: navigation
 				</ul>
 				</section>	
 			{% else %}
-				<section class="tab-pane" id="{{ tag[0] }}">
+				<section class="tab-pane" id="{{ item[0] }}">
 				<ul class="unstyled">
-				{% for node in tag[1] %}
+				{% for node in item[1] %}
 					{% if node.title != null %}
 						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 					{% endif %}
