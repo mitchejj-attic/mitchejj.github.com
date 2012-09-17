@@ -20,23 +20,23 @@ group: navigation
 		{% for tag in _B1_ %}
 			{% if forloop.first %}
 				<section class="tab-pane active" id="{{ tag[0] }}">
-				<p><ul class="unstyled">
+				<ul class="unstyled">
 				{% for node in tag[1] %}
 					{% if node.title != null %}
 						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 					{% endif %}
 				{% endfor %}
-				</ul></p>
+				</ul>
 				</section>	
 			{% else %}
 				<section class="tab-pane" id="{{ tag[0] }}">
-				<p><ul class="unstyled">
+				<ul class="unstyled">
 				{% for node in tag[1] %}
 					{% if node.title != null %}
 						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 					{% endif %}
 				{% endfor%}
-				</ul></p>
+				</ul>
 				</section>
 			{% endif %}
 		{% endfor %}
