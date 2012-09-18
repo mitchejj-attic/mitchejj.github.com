@@ -2,7 +2,7 @@
 layout: post
 title: "The Ultimate Runner’s Guide"
 description:
-category:
+category: fitness
 tags: [running]
 source:
    url: http://greatist.com/fitness/the-ultimate-runners-guide-032612/
