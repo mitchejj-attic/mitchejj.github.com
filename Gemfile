@@ -12,6 +12,11 @@ gem 'liquid'
 gem 'kramdown'                  # i wish to use kramdown
 gem 'coderay'                   # for coderay to make code text look pretty
 
+##### Add-ons for Plugins
+gem 'html_press'
+gem 'css_press'
+gem 'uglifier'
+
 #### For the Server
 gem 'unicorn'                   # our server of chice
 gem 'rack-cache'
