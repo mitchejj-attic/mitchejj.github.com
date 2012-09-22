@@ -22,15 +22,17 @@
 			margin-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
 			border-top: 20px solid white;
 			color: #2F2F2F;
-			
+		}
+		.post {
 		}
 		footer {
 			border-bottom: 1px outset #f8f8f8;
 		}
 		.mainContainer {
+			
 		}
 		.contentContainer {
-			border-right: 1px outset #f8f8f8
+			border-right: 1px outset #f8f8f8;
 		}
 		.theContent {
 			padding-right: 8px;
@@ -135,7 +137,7 @@
 		</div>
 		<div class="span3 offset5">
 			<p><small><em>{{ page.url }}<br>Generated: {{ site.time | date: "%Y-%m-%d %I:%M:%S %p"  }}</em><br>
-			Copyright &copy; 2012 &mdash; {{ site.author.name }}; {% if site.author.twitter %}<a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a>{% endif %}</small></p>
+			Copyright &copy; 2012 &mdash; <a href="xmpp:&#106;&#x61;&#115;&#x6F;&#110;&#x2E;&#109;i&#116;&#99;&#x68;&#x65;&#108;&#108;&#64;&#100;&#117;&#x6B;&#103;&#111;&#46;&#x63;om">{{ site.author.name }}</a>; <a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></small></p>
 		</div>
 	</div>
 	</footer>

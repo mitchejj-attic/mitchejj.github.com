@@ -14,7 +14,6 @@ image:
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
-
 Part of a crash log report that caused my iPhone not to sync last night:
 		
 	Crashed Thread:  0  Dispatch queue: com.apple.main-thread
