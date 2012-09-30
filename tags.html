@@ -7,7 +7,7 @@ group: navigation
 {% include JB/setup %}
 {% assign _B1_ =  site.tags %}
 <div class="tabbable">
-	<ul class="nav nav-tabs"  id="_tags_">
+	<ul class="nav nav-pills"  id="_tags_">
 	{% for tag in site.tags %}
 		{% if forloop.first %}
 			<li class="active"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
@@ -17,7 +17,7 @@ group: navigation
 	{% endfor %}
 	</ul>
 	<div class="tab-content">
-		{% for item in _B1_ %}
+		{% for item in site.tags %}
 			{% if forloop.first %}
 				<section class="tab-pane active" id="{{ item[0] }}">
 				<ul class="unstyled">
