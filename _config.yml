@@ -34,7 +34,7 @@ author :
   twitter : mitchejj
   feedburner : nil
 
-paginate: 5
+#paginate: 5
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
