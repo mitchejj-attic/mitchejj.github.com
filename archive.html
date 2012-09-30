@@ -9,11 +9,11 @@ group: navigation
 <div class="tabbable">
 	<ul class="nav nav-pills" id="_archive_year_">
 	{% for years in site.posts  %}																{% assign _this_year_ = years.date | date: "%Y" %}		{% assign _next_year_ = years.previous.date | date: "%Y" %}
-	{% if forloop.first %}													<li class="active"><a href="#{{ _this_year_ }}" data-toggle="tab">{{ _this_year_ }}</a></li>
-	{% elsif _this_year_ != _next_year_ %}								<li class=""><a href="#{{ _next_year_  }}" data-toggle="tab">{{ _next_year_ }}</a></li>							{% endif %}	{% endfor %}
+	{% if forloop.first %}													<li class="active"><a href="#{{ _this_year_ }}" data-toggle="pill">{{ _this_year_ }}</a></li>
+	{% elsif _this_year_ != _next_year_ %}								<li class=""><a href="#{{ _next_year_  }}" data-toggle="pill">{{ _next_year_ }}</a></li>							{% endif %}	{% endfor %}
 	</ul>
 	<div class="tab-content">
-		{% for node in site.posts  %}																{% assign _this_year_ = node.date | date: "%Y" %}		{% assign _next_year_ = node.previous.date | date: "%Y" %}
+		{% for node in _B1_  %}																{% assign _this_year_ = node.date | date: "%Y" %}		{% assign _next_year_ = node.previous.date | date: "%Y" %}
 		{% if forloop.first %}
 		 <section class="tab-pane active" id="{{ _this_year_ }}">
 		 	<ul class="unstyled">
