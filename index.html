@@ -4,8 +4,27 @@ title: "stderr | log"
 description: "an io scratch pad"
 header : Standard Error, the blog
 ---
-{% for post in site.posts limit: 5  %}
+
+{% for post in paginator.posts  %}
 	{% include stderr/setup %}
 	{% include stderr/io %}
 	<hr>
 {% endfor  %}
+
+<div class="pagination pagination-centered">
+	<ul>
+	{% if paginator.previous_page > 1 %}
+		<li class="previous"><a href="{{ BASE_PATH }}/page{{paginator.previous_page}}">&larr; Previous fail</a></li>
+	{% elsif paginator.previous_page == 1 %}
+		<li class="previous"><a href="{{ BASE_PATH }}/">&larr; Previous</a></li>
+	{% else %}
+	<li class="previous disabled"><a>&larr; Previous</a></li>
+	{% endif %}
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a></li>
+	{% if paginator.next_page %}
+	<li class="next"><a href="{{ BASE_PATH }}/page{{paginator.next_page}}" title="">Next &rarr;</a></li>
+	{% else %}
+	<li class="next disabled"><a>Next &rarr;</a>
+	{% endif %}
+	</ul>
+</div>
