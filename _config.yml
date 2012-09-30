@@ -12,7 +12,7 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true  
+  use_coderay: true
   coderay:
     coderay_wrap: div
     #coderay_line_numbers: inline
@@ -21,7 +21,6 @@ kramdown:
     #coderay_bold_every: 5
     coderay_css: style
 
-	  
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
@@ -35,6 +34,7 @@ author :
   twitter : mitchejj
   feedburner : nil
 
+paginate: 5  
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
@@ -73,7 +73,7 @@ JB :
   #   - When setting BASE_PATH it must be a valid url.
   #     This means always setting the protocol (http|https) or prefixing with "/"
   BASE_PATH : false
-
+  
   # By default, the asset_path is automatically defined relative to BASE_PATH plus the enabled theme.
   # ex: [BASE_PATH]/assets/themes/[THEME-NAME]
   #
@@ -83,7 +83,8 @@ JB :
   #   /assets
   #
   ASSET_PATH : false
-
+  
+  
   # These paths are to the main pages Jekyll-Bootstrap ships with.
   # Some JB helpers refer to these paths; change theme here if needed.
   #
@@ -108,7 +109,7 @@ JB :
       num_posts: 
       width: 
       colorscheme:
-   
+      
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
