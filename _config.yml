@@ -37,6 +37,10 @@ author :
 paginate: 5
 prose:
   rooturl: "_posts"
+  metadata:
+	  "_posts/blog": |
+	  layout: post
+	  title:    "Title of your article"
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
