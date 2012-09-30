@@ -34,7 +34,24 @@ author :
   twitter : mitchejj
   feedburner : nil
 
-paginate: 5  
+paginate: 5
+prose:
+  rooturl: "_posts"
+  metadata:
+	  "_posts/blog": |
+	  layout: post
+	  title:    "Title of your article"
+	  description:
+	  category:
+	  tags: []
+	  source:
+	  	url:
+	  	title:
+	llist: http://mantia.me/wallpaper/
+	image:
+		url:
+		caption:
+
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
 # Most places will/should use BASE_PATH to make the urls
