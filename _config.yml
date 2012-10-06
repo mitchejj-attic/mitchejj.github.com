@@ -20,9 +20,10 @@ kramdown:
     coderay_tab_width: 3
     #coderay_bold_every: 5
     coderay_css: style
+    
 prose:
    metadata:
-      "_posts/": |
+      "_posts": |
          title:    "Title of your article"
          abstract: "Abstract"
 
