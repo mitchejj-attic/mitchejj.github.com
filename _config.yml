@@ -24,10 +24,10 @@ kramdown:
 prose:
    metadata:
       "_posts": |
-         title:    "Title of your article"
+         title: ""
          description:
          category:
-         tags: [internet, social]
+         tags: []
          source:
             url:
             title:
