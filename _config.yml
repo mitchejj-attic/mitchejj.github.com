@@ -25,7 +25,16 @@ prose:
    metadata:
       "_posts": |
          title:    "Title of your article"
-         abstract: "Abstract"
+         description:
+         category:
+         tags: [internet, social]
+         source:
+            url:
+            title:
+         llist:
+         image:
+            url:
+            caption:
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
