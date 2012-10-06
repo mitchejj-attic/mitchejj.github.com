@@ -20,6 +20,11 @@ kramdown:
     coderay_tab_width: 3
     #coderay_bold_every: 5
     coderay_css: style
+prose:
+   metadata:
+      "_posts/": |
+         title:    "Title of your article"
+         abstract: "Abstract"
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
