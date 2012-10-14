@@ -1,6 +1,138 @@
----
-theme :
-  name : twitter-2.0
----
-{% include JB/setup %}
-{% include themes/twitter-2.0/default.html %}
+<!DOCTYPE html>{% include stderr/setup %}
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>{{ page.title }}</title>
+    {% if page.description %}<meta name="description" content="{{ page.description }}">{% endif %}
+    {% if site.author.name %}<meta name="author" content="{{ site.author.name }}; {% if site.author.twitter %}@{{ site.author.twitter }}{% endif %}">{% endif %}
+	{% if site.author.name %}<meta name="designer" content="{{ site.author.name }}; {% if site.author.twitter %}@{{ site.author.twitter }}{% endif %}">{% endif %}
+	<meta name="generator" content="Jekyll">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Le styles 
+	<link href="//netdna.bootstrapcdn.com/bootswatch/2.1.0/cerulean/bootstrap.min.css" rel="stylesheet">-->
+	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	
+	<style type="text/css" media="screen and (max-width: 767px)"></style>
+	<style type="text/css" media="screen and (min-width: 980px)">
+		body {
+			margin-top: 40px; /* 40px to make the container go all the way to the bottom of the topbar */
+			border-top: 20px solid white;
+			color: #2F2F2F;
+		}
+		.theContent {
+			padding-right: 8px;
+		}
+		.about img {
+			float: left;
+			margin: 0 8px 8px 0;
+
+		}
+		.img-post {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.about {
+			text-align: left;
+		}
+		.sideRail {
+		}
+		.post {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+		a.permalink {
+			text-decoration: none;
+			color: #3d3d3d;
+		}
+		a.permalink :hover{
+			text-decoration: none;
+			color: #049cdb;			
+		}
+	</style>
+	<style type="text/css" media="screen">
+	footer {
+		border-top: 1px outset #e9eaee;
+		}
+	</style>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/2.0/css/font-awesome.css" rel="stylesheet">
+	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+</head>
+  <body>
+  	<!-- Nav Unit -->
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
+          <!-- Everything you want hidden at 940px or less, place within here -->
+          <div class="nav-collapse">
+            <ul class="nav">
+              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
+            </ul>
+            <form action="http://duckduckgo.com/" class="navbar-search pull-right">
+					<input type="text" name="q"  class="input-medium search-query" placeholder="search" />
+					<input type="hidden" name="t" value="stderr.me"/>
+	       </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- End Nav Unit -->
+<div class="container-fluid mainContainer">
+	<div class="row-fluid">
+		<div class="span9 contentContainer"><!--Body content-->
+			<div class="theContent">
+			{{ content }}
+			</div>
+		</div>
+		<div class="span3 sideRail"> <!--Sidebar content-->
+			<aside class="about">
+				<img src="http://www.gravatar.com/avatar/{{ site.author.gravatar }}?s=128" width="128" height="128" alt="me" class="img-circle" /> This is the disjointed weblog of <a href="{{ site.production_url }}/about">{{ site.author.name }}</a>; a manager at Panera Bread, a graduate of Grand Valley State University with a degree in Computer Science, a geek, a runner and a runDisney fan. Here you will find a unique blend of tech, running, Disney (Parks) and my obsession with "guesstimating abnormality". The initial genesis of this space was to create a playground where I may share my thoughts and experiences.</p>
+			</aside>
+
+			{% if page.tags == false and page.tags == empty %}			
+			<aside class="tagBox">
+			<h5>Site Tags:</h5>
+				<ul class="tag_box">
+				{% for tags in site.tags %}
+				<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tags[0] }}-ref" class="label label-info">{{ tags[0] }}</a></li>
+				{% endfor %}
+			</ul>
+			<hr>
+			</aside>{% endif %}
+
+
+		</div>
+	</div>
+</div>
+	<footer>
+	<div class="row-fluid">
+
+		<div class="span3">
+		&nbsp;
+		</div>
+		<div class="span3 offset5">
+			<p><small><em>{{ page.url }}<br>Generated: {{ site.time | date: "%Y-%m-%d %I:%M:%S %p"  }}</em><br>
+			Copyright &copy; 2012 &mdash; <a href="xmpp:&#106;&#x61;&#115;&#x6F;&#110;&#x2E;&#109;i&#116;&#99;&#x68;&#x65;&#108;&#108;&#64;&#100;&#117;&#x6B;&#103;&#111;&#46;&#x63;om">{{ site.author.name }}</a>; <a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></small></p>
+		</div>
+	</div>
+	</footer>
+
+<script async src="//code.jquery.com/jquery-1.8.1.min.js"></script>
+<script>window.jQuery || document.write('<script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"><\/script>')</script>
+    <script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"></script>
+    {% include JB/analytics %}
+  </body>
+</html>
