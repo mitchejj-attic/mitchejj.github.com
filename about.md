@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Bio
 tagline: guesstimating abnormality
 group: navigation
