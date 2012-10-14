@@ -1,7 +1,5 @@
 {% capture _SAVE_THE_SPACE_ %}
-{% include JB/setup %}
 {% if post %}
-	{% assign _LEAF_ = FALSE %}
 	{% assign _CONTENT_ = post.content %}
 	{% assign _URL_ = post.url %}
 	{% assign _TITLE_ = post.title %}
@@ -12,7 +10,6 @@
 		{% assign _LLIST_ = post.llist %}
 		{% assign _IMAGE_ = post.image %}
 {% else %}
-	{% assign _LEAF_ = 1 %}
 	{% assign _CONTENT_ = content %}
 	{% assign _URL_ = page.url %}
 	{% assign _TITLE_ = page.title %}
