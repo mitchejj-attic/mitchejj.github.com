@@ -25,5 +25,9 @@ So here are a few quick links:
 * http://crunchbang.org/forums/viewtopic.php?id=21510
 * http://blog.realcomputerguy.com/2012/05/efi-stub-booting-without-bootloader.html
 * https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface
+* http://wiki.debian.org/MacBook
+* http://forums.debian.net/viewtopic.php?f=16&t=81120
+* http://wiki.osdev.org/GRUB
+* http://crunchbang.org/forums/viewtopic.php?id=10755
 
 grub-efi-amd64 is also a useful package... I think.
