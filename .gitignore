@@ -4,7 +4,6 @@ _scratch/*
 
 Thumbs.db
 .DS_Store
-.sparkleshare
 !.gitkeep
 
 .rbenv-version
