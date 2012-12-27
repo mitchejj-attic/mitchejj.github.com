@@ -4,7 +4,7 @@ source :rubygems
 gem	'rack'
 
 ##### Add Jekyll
-#gem 'jekyll',"~>0.11.2" # we need at least this version so jekyll will use Ruby 1.9.2
+gem 'jekyll',"~>0.11.2" # we need at least this version so jekyll will use Ruby 1.9.2
 gem	'rack-jekyll',		:git => 'https://github.com/adaoraul/rack-jekyll.git', :require => 'rack/jekyll'
 gem 'liquid'
 
