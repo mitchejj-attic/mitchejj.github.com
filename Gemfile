@@ -1,4 +1,5 @@
-source :rubygems
+source "https://rubygems.org"
+#source :rubygems
 
 ##### Basic Set up for rack
 gem	'rack'
