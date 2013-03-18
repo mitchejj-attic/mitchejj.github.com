@@ -1,6 +1,6 @@
 ---
-title: "Backing Up IMAP (email)"
-description:
+title: "NoPriv.py"
+description:"Backing Up IMAP (email)"
 category:
 tags: []
 source:
@@ -11,6 +11,7 @@ image:
    url:
    caption:
 
+published: false
 ---
 
 I could have used a script like this a few months back when I was trying to figure out what to do with my email hosting issues. 
