@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "NoPriv.py"
 description:
 category:
@@ -10,8 +11,9 @@ llist: https://raymii.org/s/software/Nopriv.py.html
 image:
    url:
    caption:
-
 published: true
 ---
 
+{% include JB/setup %}
+{% include stderr/setup %}
 I could have used a script like this a few months back when I was trying to figure out what to do with my email hosting issues.
