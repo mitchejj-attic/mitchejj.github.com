@@ -11,9 +11,10 @@ image:
    url:
    caption:
 
-published: true
 ---
 
+{% include JB/setup %}
+{% include stderr/setup %}
 # How does it work?
 
 Enter Text in Markdown format.
