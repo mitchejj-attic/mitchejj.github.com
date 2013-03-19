@@ -1,5 +1,5 @@
 ---
-title: "Linux Playground"
+title: 'Linux Playground'
 description:
 category: linux
 tags: []
