@@ -24,6 +24,7 @@ kramdown:
 prose:
    metadata:
       "_posts": |
+         layout: post
          title: ""
          description:
          category:
