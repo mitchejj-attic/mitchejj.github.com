@@ -1,7 +1,7 @@
 ---
 title: "Linux Playground"
 description:
-category:
+category: linux
 tags: []
 source:
    url:
