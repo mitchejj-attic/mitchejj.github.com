@@ -1,5 +1,5 @@
 ---
-title: "NoPriv.py"
+title: "NoPriv"
 description:
 category:
 tags: []
