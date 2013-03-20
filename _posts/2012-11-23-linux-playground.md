@@ -2,8 +2,8 @@
 layout: post
 title: 'Linux Playground'
 description:
-category: linux
-tags: []
+category: 
+tags: [linux]
 source:
    url:
    title:
