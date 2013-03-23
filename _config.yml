@@ -51,10 +51,10 @@ author :
   feedburner : nil
 
 asset:
-   css: https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css
-   js: https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js
-   #jquery: http://code.jquery.com/jquery-1.9.1.min.js
-   jquery: https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+   css: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css
+   js: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js
+   #jquery: //code.jquery.com/jquery-1.9.1.min.js
+   jquery: //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 paginate: 5
 
 # The production_url is only used when full-domain names are needed
