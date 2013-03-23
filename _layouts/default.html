@@ -13,7 +13,7 @@
 		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<!-- Le styles -->
-	<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css" rel="stylesheet">
+	<link href="{{ site.asset.css }}" rel="stylesheet">
 	
 	<style type="text/css" media="screen and (max-width: 767px)"></style>
 	<style type="text/css" media="screen and (min-width: 980px)">
@@ -111,8 +111,6 @@
 			</ul>
 			<hr>
 			</aside>{% endif %}
-
-
 		</div>
 	</div>
 </div>
@@ -128,10 +126,9 @@
 		</div>
 	</div>
 	</footer>
-
 <script async src="//code.jquery.com/jquery-1.9.1.min.js"></script>
-<script>window.jQuery || document.write('<script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"><\/script>')</script>
-    <script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+<script>window.jQuery || document.write('<script async src="{{ site.asset.js }}"><\/script>')</script>
+    <script async src="{{ site.asset.js }}"></script>
     {% include JB/analytics %}
   </body>
 </html>
