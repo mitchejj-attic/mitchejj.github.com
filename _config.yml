@@ -50,6 +50,9 @@ author :
   twitter : mitchejj
   feedburner : nil
 
+asset:
+   css: http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css
+   js: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js
 paginate: 5
 
 # The production_url is only used when full-domain names are needed
