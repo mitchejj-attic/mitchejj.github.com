@@ -51,7 +51,7 @@ author :
   feedburner : nil
 
 asset:
-   css: http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css
+   css: http://stderr.me/assets/flatstrap.css
    js: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js
 paginate: 5
 
