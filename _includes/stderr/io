@@ -7,7 +7,7 @@
 			<h2>{% if _LLIST_ %}<a href="{{ _LLIST_ }}">{{ _TITLE_ }}</a>{% if _DESC_ %} <small>{{ _DESC_ }}</small>{% endif %}</h2>
 			{% else %}{{ _TITLE_ }}{% if _DESC_ %} <small>{{ _DESC_ }}</small>{% endif %}</h2>{% endif %}
 		</hgroup>
-		<div><small>{% if post %}<a href="{{ BASE_PATH }}{{ _URL_ }}" class="permalink"><i class="icon-time"></i></a>{% else %}<i class="icon-paper-clip"></i>{% endif %} <time class="pubdate" datetime="{{ _DATE_ | date: "%Y-%m-%d" }}">{{ _DATE_ | date: "%b %d %Y" }}</time>
+		<div><small>{% if post %}<a href="{{ BASE_PATH }}{{ _URL_ }}" class="permalink"><i class="icon-paper-clip"></i></a>{% else %}<i class="icon-paper-clip"></i>{% endif %} <time class="pubdate" datetime="{{ _DATE_ | date: "%Y-%m-%d" }}">{{ _DATE_ | date: "%b %d %Y" }}</time>
 			{% if _TAGS_.[0] %} | {% for tag in _TAGS_ %}<a href="{{ BASE_PATH }}{{ site.JB.tags_path }}" class="label" title="tag page">{{ tag }}</a> {% endfor %}{% endif %}
 			{% if _SOURCE_.url  %} | via: {% if _SOURCE_.title %}	<a href="{{ _SOURCE_.url }}" title="{{ _SOURCE_.title }}">{{ _SOURCE_.title }}</a>
 			{% else %}	<a href="{{ _SOURCE_.url }}">{{ _SOURCE_.url }}</a>{% endif %}{% endif %}</small>
