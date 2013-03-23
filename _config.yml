@@ -53,6 +53,7 @@ author :
 asset:
    css: https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css
    js: https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js
+   jquery: http://code.jquery.com/jquery-1.9.1.min.js
 paginate: 5
 
 # The production_url is only used when full-domain names are needed
