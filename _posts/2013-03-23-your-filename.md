@@ -3,7 +3,7 @@ layout: post
 title: "Heigh-Ho! Heigh-Ho!"
 description: A Dopey I go?
 category:
-tags: [disney running dopey]
+tags: [running, disney, dopey]
 source:
    url: http://www.rundisney.com/disneyworld-marathon/#dopey-challenge
    title: Walt Disney World Marathon Weekend
