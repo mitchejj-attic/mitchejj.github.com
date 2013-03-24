@@ -3,4 +3,11 @@
 .post-header h2 {
 	font-family: "'Source Sans Pro', inherit";
 	font-weight: 600;
+
+}
+
+.post-header small {
+	font-family: "'Source Sans Pro', inherit";
+	font-weight: 200;
+
 }
