@@ -11,7 +11,7 @@
 	font-family: 'Marvel', serif;s
 	font-style: normal;
 	font-weight: 400;
-	text-transform: lowercase;
+	text-transform: capitalize;
 }
 
 .post-header h2 small {
