@@ -7,8 +7,9 @@
 }
 .page-header h1 small {
 	font-family: 'Source Code Pro', sans-serif;
-font-style: normal;
-font-weight: 200;
+	font-style: normal;
+	font-size: 13px;
+	font-weight: 200;
 }
 
 .post-header h2 {
