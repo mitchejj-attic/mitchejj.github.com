@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Arvo|Sintony|Kameron|Arbutus+Slab);
 .page-header h1 {
 	font-family: 'Arvo', serif;
 	font-style: normal;
@@ -22,7 +23,7 @@
 }
 /*
 @import url(http://fonts.googleapis.com/css?family=Sanchez|Crimson+Text|Tienne|Source+Sans+Pro|Source+Code+Pro|Gilda+Display|Noticia+Text|Marvel|Tauri|Headland+One|Bitter);
-@import url(http://fonts.googleapis.com/css?family=Arvo|Sintony|Kameron);
+
 'Gilda Display', 'Noticia Text', 'Marvel', 'Tauri', 'Headland One', 'Bitter'
 h1: Arvo
 h2: Kameron
