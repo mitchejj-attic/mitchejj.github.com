@@ -13,3 +13,7 @@
 	font-weight: 400;
 	text-transform: lowercase;
 }
+
+.post-header h2 small {
+	text-transform: lowercase;
+}
