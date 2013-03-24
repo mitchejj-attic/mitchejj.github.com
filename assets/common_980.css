@@ -34,3 +34,8 @@ a.permalink :hover{
 	text-decoration: none;
 	color: #049cdb;			
 }
+
+h2.post-header {
+	font-family: Source Sans Pro, inherit;
+	font-weight: 600;
+}
