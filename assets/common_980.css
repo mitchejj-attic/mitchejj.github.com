@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Sintony|Gilda+Display|Noticia+Text);
-@import url(http://fonts.googleapis.com/css?family=Marvel|Arvo|Tauri|Headland+One|Bitter|Crimson+Text);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro|Source+Code+Pro|Gilda+Display|Noticia+Text|Marvel|Tauri|Headland+One|Bitter);
+@import url(http://fonts.googleapis.com/css?family=Arvo|Sintony|Crimson+Text);
 .page-header h1 {
 	font-family: 'Arvo', serif;
 	font-style: normal;
@@ -16,7 +16,11 @@
 	font-style: normal;
 	font-weight: 400;
 }
+.pubdate {
+
+}
 /*
+'Gilda+Display', 'Noticia+Text', 'Marvel', 'Tauri', 'Headland+One', 'Bitter'
 h1: Arvo
 h2: Crimson Text
 body: Sintony
