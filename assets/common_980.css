@@ -1,13 +1,14 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600);
 
-.post-header h2 {
+.page-header h1 {
 	font-family: "'Source Sans Pro', inherit";
 	font-weight: 600;
 
 }
 
-.post-header h2 small {
+.post-header h1 small {
 	font-family: "'Source Sans Pro', inherit";
 	font-weight: 200;
 
 }
+<link href="http://sandbox1.stderr.me/assets/common_980.css" rel="stylesheet">
