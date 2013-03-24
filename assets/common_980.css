@@ -2,15 +2,7 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
 
 .page-header h1 {
-	font-family: 'Arvo', serif;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 36px;
-	text-transform: none;
-	text-decoration: none;
-	letter-spacing: 0em;
-	word-spacing: 0em;
-	line-height: 1.4;
+	font-family: 'Arvo', serif;;
 }
 .post-header h1 small {
 	font-family: "'Source Sans Pro'";
