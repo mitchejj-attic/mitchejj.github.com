@@ -51,7 +51,7 @@ author :
   feedburner : nil
 
 asset:
-   css: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap.no-icons.min.css
+   css: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css
    js: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js
    #jquery: //code.jquery.com/jquery-1.9.1.min.js
    jquery: //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
