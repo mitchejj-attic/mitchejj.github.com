@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,500);
-@import url(http://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url((http://fonts.googleapis.com/css?family=Arvo|Marvel);
 
 .page-header h1 {
-	font-family: 'Arvo', serif;
+	font-family: 'Marvel', serif;
 	font-style: normal;
 	font-weight: 400;
 }
