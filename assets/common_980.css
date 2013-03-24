@@ -2,11 +2,11 @@
 @import url(http://fonts.googleapis.com/css?family=Arvo);
 
 .page-header h1 {
-	font-family: "Arvo, inherit";
+	font-family: "Arvo, serif";
 	font-weight: 500;
 }
 .post-header h1 small {
-	font-family: "'Source Sans Pro', inherit";
+	font-family: "'Source Sans Pro',";
 	font-weight: 200;
 
 }
