@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,500|Source+Code+Pro:200);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,500|Source+Code+Pro:500);
 @import url(http://fonts.googleapis.com/css?family=Marvel|Arvo);
 .page-header h1 {
 	font-family: 'Arvo', serif;
@@ -9,7 +9,7 @@
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: normal;
 	font-size: 15px;
-	font-weight: 200;
+	font-weight: 500;
 	letter-spacing: 0em;
 	word-spacing: 0em;
 }
