@@ -21,8 +21,8 @@
 	font-weight: 400;
 }
 body {
-	background-color: #38444D;
-	color: #FEFEFE;
+	color: #2f4f4f;
+	background-color: #FEFEFE; /* eee8dc */
 }
 a:link {
 	color: #DED8D7;
