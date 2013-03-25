@@ -19,7 +19,13 @@
 	font-family: 'Sintony', sans-serif;
 	font-style: normal;
 	font-weight: 400;
-
+}
+body {
+	background-color: #38444D;
+	color: #FEFEFE;
+}
+a:link {
+	color: #DED8D7;
 }
 /*
 @import url(http://fonts.googleapis.com/css?family=Sanchez|Crimson+Text|Tienne|Source+Sans+Pro|Source+Code+Pro|Gilda+Display|Noticia+Text|Marvel|Tauri|Headland+One|Bitter);
