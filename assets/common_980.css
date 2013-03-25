@@ -22,7 +22,7 @@
 }
 body {
 	color: #2f4f4f;
-	background-color: #FEFEFE; /* eee8dc */
+	background-color: rgb(250, 250, 250) ; /* #FEFEFE eee8dc */
 }
 /*a:link {
 	color: #DED8D7;
