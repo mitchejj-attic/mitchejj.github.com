@@ -97,8 +97,11 @@
 		<div class="span3 pureLeft">
 			<div  class="fixed-position">
 				<header class="arch-header">
-					<h1>{{ site.title }}<br><small>{{ site.tagline }}</small></h1>
+					<h1>{{ page.title }}<br><small>{{ site.tagline }}</small></h1>
 				</header>
+				              {% assign pages_list = site.pages %}
+              {% assign group = 'navigation' %}
+              {% include JB/pages_list %}
 			</div>
 		</div>
 		<div class="span6 contentContainer"><!--Body content-->
