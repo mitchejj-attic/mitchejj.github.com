@@ -51,7 +51,7 @@
 			text-decoration: none;
 			color: #049cdb;			
 		}
-		.pureLeft {
+		.fixed-position {
 			position: fixed;
 		}
 	</style>
@@ -95,9 +95,11 @@
 <div class="container-fluid mainContainer">
 	<div class="row-fluid">
 		<div class="span3 pureLeft">
-			<header class="site-header">
-				<h1>{{ site.title }}<br><small>{{ site.description }}</small></h1>
-			</header>
+			<div  class="fixed-position">
+				<header class="site-header">
+					<h1>{{ site.title }}<br><small>{{ site.description }}</small></h1>
+				</header>
+			</div>
 		</div>
 		<div class="span6 contentContainer"><!--Body content-->
 			<div class="theContent">
