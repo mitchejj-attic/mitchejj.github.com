@@ -6,6 +6,9 @@ group: navigation
 ---
 {% include JB/setup %}
 ### whoami
+<aside class="about">
+<img src="//www.gravatar.com/avatar/{{ site.author.gravatar }}?s=128" width="128" height="128" alt="me" class="img-circle" /> This is the disjointed weblog of <a href="{{ site.production_url }}/about">{{ site.author.name }}</a>; a manager at Panera Bread, a graduate of Grand Valley State University with a degree in Computer Science, a geek, a runner and a runDisney fan. Here you will find a unique blend of tech, running, Disney (Parks) and my obsession with "guesstimating abnormality". The initial genesis of this space was to create a playground where I may share my thoughts and experiences.
+</aside>
 I'm Jason and this is my new online dwelling. I graduated [Grand Valley State University](http://gvsu.edu) with a degree in Computer Science. I however, have not put my degree to any use since graduation. Instead I opted to work for [Panera Bread](http://panerabread.com). Thanks to this experience learned a lot and grown as an individual. Here will live digital workspace and playground. I will share personal thoughts, refine my writing style and explore different technologies and methodologies. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
 
 Sometime in the summer of 2011 I wanted to find an escape from my Google dependency. The first step was to move away from Google Mail (gMail), with that change I wanted to use my own domain. I wanted a short URL that could tie into both my geek side and my emerging heath consciousness, nothing unreasonable. I ran many ideas thru my Domain Register of choice [hover.com](https://www.hover.com/), nothing resonated with until [stderr.me](http://stderr.me).
