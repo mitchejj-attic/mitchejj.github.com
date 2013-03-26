@@ -40,9 +40,9 @@ prose:
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
-title : Standard Error
-tagline: an io scratch pad
-description: guesstimating abnormality
+title : "stderr | log"
+tagline: "an io scratch pad"
+description: "guesstimating abnormality"
 author :
   name : Jason Mitchell
   email : jason.j.mitchell+myspambin@gmail.com
