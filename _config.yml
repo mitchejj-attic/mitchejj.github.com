@@ -41,7 +41,8 @@ prose:
 # so be sure to set them if your theme uses them.
 #
 title : Standard Error
-tagline: guesstimating abnormality
+tagline: an io scratch pad
+description: guesstimating abnormality
 author :
   name : Jason Mitchell
   email : jason.j.mitchell+myspambin@gmail.com
