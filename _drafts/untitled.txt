@@ -1,8 +1,7 @@
-<form>
+			<form action="http://duckduckgo.com/" class="fixed-position pull-right">
 					<input type="text" name="q"  class="input-medium search-query" placeholder="search" />
 					<input type="hidden" name="t" value="stderr.me"/>
 	       </form>
-
 [link to this post]({% post_url 2012-01-05-hello-world %})
 http://humanstxt.org/Standard.html
 http://cheat.errtheblog.com/s/octopress
