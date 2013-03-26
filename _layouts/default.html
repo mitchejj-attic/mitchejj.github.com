@@ -118,17 +118,46 @@
 				<img src="//www.gravatar.com/avatar/{{ site.author.gravatar }}?s=128" width="128" height="128" alt="me" class="img-circle" /> This is the disjointed weblog of <a href="{{ site.production_url }}/about">{{ site.author.name }}</a>; a manager at Panera Bread, a graduate of Grand Valley State University with a degree in Computer Science, a geek, a runner and a runDisney fan. Here you will find a unique blend of tech, running, Disney (Parks) and my obsession with "guesstimating abnormality". The initial genesis of this space was to create a playground where I may share my thoughts and experiences.
 			</aside>
 
-			{% if page.tags == false and page.tags == empty %}			
-			<aside class="tagBox">
-			<h5>Site Tags:</h5>
-				<ul class="tag_box">
-				{% for tags in site.tags %}
-				<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tags[0] }}-ref" class="label label-info">{{ tags[0] }}</a></li>
+<div class="tabbable">
+	<ul class="nav nav-pills"  id="_tags_">
+	{% for tag in site.tags %}
+		{% if forloop.first %}
+			<li class="active"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+		{% else %}
+			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+	<div class="tab-content">
+		{% for item in site.tags %}
+			{% if forloop.first %}
+				<section class="tab-pane active" id="{{ item[0] }}">
+				<ul class="unstyled">
+				{% for node in item[1] %}
+					{% if node.title != null %}
+						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
 				{% endfor %}
-			</ul>
-			<hr>
-			</aside>{% endif %}
+				</ul>
+				</section>	
+			{% else %}
+				<section class="tab-pane" id="{{ item[0] }}">
+				<ul class="unstyled">
+				{% for node in item[1] %}
+					{% if node.title != null %}
+						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
+				{% endfor%}
+				</ul>
+				</section>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
 		</div>
+	</div>
+	<div class="row-fluid">
+
 	</div>
 	
 </div>
