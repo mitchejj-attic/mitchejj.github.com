@@ -51,6 +51,9 @@
 			text-decoration: none;
 			color: #049cdb;			
 		}
+		.pureLeft {
+			position: fixed;
+		}
 	</style>
 	<style type="text/css" media="screen">
 	footer {
@@ -91,7 +94,12 @@
     <!-- End Nav Unit -->
 <div class="container-fluid mainContainer">
 	<div class="row-fluid">
-		<div class="span9 contentContainer"><!--Body content-->
+		<div class="span3 pureLeft">
+			<header class="site-header">
+				<h1>{{ site.title }}<br><small>{{ site.description }}</small></h1>
+			</header>
+		</div>
+		<div class="span6 contentContainer"><!--Body content-->
 			<div class="theContent">
 			{{ content }}
 			</div>
