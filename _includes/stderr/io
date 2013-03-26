@@ -1,6 +1,4 @@
-{% if _LEAF_ %}<header class="page-header">
-		<h1>stderr | log <small>an io scratch pad</small></h1>
-</header>{% endif %}
+
 <article>
 	<header>
 		<hgroup class="post-header">		{% include stderr/setup %}
