@@ -57,6 +57,9 @@
 	</style>
 	<style type="text/css" media="screen">
 		footer {
+			position: fixed;
+			bottom: 1%;
+			left 1%;
 		}
 	</style>
 	<link href="http://sandbox1.stderr.me/assets/common_980.css" rel="stylesheet">
@@ -131,10 +134,8 @@
 </div>
 
 			<footer>
-				<div >
 					<p><small><em>{{ page.url }}<br>Generated: {{ site.time | date: "%Y-%m-%d %I:%M:%S %p"  }}</em><br>
 					Copyright &copy; 2012 &mdash; <a href="xmpp:&#106;&#x61;&#115;&#x6F;&#110;&#x2E;&#109;i&#116;&#99;&#x68;&#x65;&#108;&#108;&#64;&#100;&#117;&#x6B;&#103;&#111;&#46;&#x63;om">{{ site.author.name }}</a>; <a href="http://twitter.com/{{ site.author.twitter }}">@{{ site.author.twitter }}</a></small></p>
-				</div>
 			</footer>
 
 <script async src="{{ site.asset.jquery }}"></script>
