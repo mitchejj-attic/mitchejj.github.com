@@ -1,8 +1,7 @@
 ---
 layout: post
 title: "Shameful"
-description: "How the maker of TurboTax fought free, simple tax filing"
-category:
+description: 
 tags: []
 source:
    url:
