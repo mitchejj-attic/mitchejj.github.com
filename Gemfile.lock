@@ -65,6 +65,7 @@ DEPENDENCIES
   coderay
   css_press
   html_press
+  jekyll
   kramdown
   liquid
   newrelic_rpm
