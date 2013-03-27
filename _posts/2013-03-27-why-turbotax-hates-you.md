@@ -7,7 +7,7 @@ tags: []
 source:
    url:
    title:
-llist:http://arstechnica.com/business/2013/03/how-the-maker-of-turbotax-fought-free-simple-tax-filing/
+llist: http://arstechnica.com/business/2013/03/how-the-maker-of-turbotax-fought-free-simple-tax-filing/
 image:
    url:
    caption:
