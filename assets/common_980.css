@@ -14,7 +14,7 @@
 	font-weight: 400;
 	text-transform: lowercase;
 }
-.stderr-header {
+.stderr-header, .post-header, h3 {
 	font-family: 'Kameron', serif;
 	font-style: normal;
 	font-weight: 400;
