@@ -1,16 +1,17 @@
 ---
 layout: post
 title: "The Ultimate Runner’s Guide"
-description:
+description: (Infographic)
 category: fitness
 tags: [running]
 source:
-   url: http://greatist.com/fitness/the-ultimate-runners-guide-032612/
-   title: The Ultimate Runner’s Guide (Infographic)
-llist:
+   url:
+   title:
+llist: http://greatist.com/fitness/the-ultimate-runners-guide-032612/
 image:
-   url: http://www.greatist.com/wp-content/uploads/2012/03/The-Ultimate-Runners-Guide.png
+   url:
    caption:
 ---
+
 {% include JB/setup %}
-{% include stderr/img %}
+{% include stderr/setup %}
