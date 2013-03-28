@@ -13,7 +13,7 @@ group: navigation
 	<ul class="nav nav-pills"  id="_tags_">
 	{% for tag in site.tags %}
 		{% if forloop.first %}
-			<li class="active"><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+			<li class=""><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
 		{% else %}
 			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
 		{% endif %}
@@ -22,7 +22,7 @@ group: navigation
 	<div class="tab-content">
 		{% for item in site.tags %}
 			{% if forloop.first %}
-				<section class="tab-pane active" id="{{ item[0] }}">
+				<section class="tab-pane " id="{{ item[0] }}">
 				<ul class="unstyled">
 				{% for node in item[1] %}
 					{% if node.title != null %}
