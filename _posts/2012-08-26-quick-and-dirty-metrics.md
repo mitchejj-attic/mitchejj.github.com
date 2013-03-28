@@ -6,6 +6,7 @@ category:
 tags: [meta]
 ---
 {% include JB/setup %}
+{% include stderr/setup %}
 Now that I have github -> heroku publishing in place now is the time to setup even more over kill, heroku offers a few (2)5 MB Memcache Bucket.
 
 I made the following changes to `config.ru`
