@@ -3,7 +3,7 @@ layout: page
 title : Archive
 header : Post Archive
 ---
-<h3 class="sp-header">{{ page.title }} <small>{{ page.header }}</small></h3>
+<h3 class="stderr-header">{{ page.title }} <small>{{ page.header }}</small></h3>
 <div class="tabbable">
 	<ul class="nav nav-pills" id="_archive_year_">
 	{% for years in site.posts  %}																{% assign _this_year_ = years.date | date: "%Y" %}		{% assign _next_year_ = years.previous.date | date: "%Y" %}
