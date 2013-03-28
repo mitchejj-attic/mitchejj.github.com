@@ -7,6 +7,8 @@ group: navigation
 {% include JB/setup %}
 {% assign _B1_ =  site.tags %}
 
+<h3>Tags</h3>
+
 <div class="tabbable">
 	<ul class="nav nav-pills"  id="_tags_">
 	{% for tag in site.tags %}
@@ -20,7 +22,7 @@ group: navigation
 	<div class="tab-content">
 		{% for item in site.tags %}
 			{% if forloop.first %}
-				<section class="tab-pane active" id="{{ item[0] }}">
+				<section class="tab-pane " id="{{ item[0] }}">
 				<ul class="unstyled">
 				{% for node in item[1] %}
 					{% if node.title != null %}
