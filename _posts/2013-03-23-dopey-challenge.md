@@ -5,9 +5,9 @@ description: A Dopey I go?
 category:
 tags: [running, disney, dopey]
 source:
-   url: http://www.rundisney.com/disneyworld-marathon/#dopey-challenge
+   url: 
    title: Walt Disney World Marathon Weekend
-llist:
+llist: http://www.rundisney.com/disneyworld-marathon/#dopey-challenge
 image:
    url:
    caption:
