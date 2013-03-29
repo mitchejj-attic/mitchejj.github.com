@@ -6,9 +6,9 @@ group: navigation
 ---
 {% include JB/setup %}
 ### whoami
-
+<aside class="about">
 <img src="//www.gravatar.com/avatar/{{ site.author.gravatar }}?s=128" width="128" height="128" alt="me" class="img-circle" /> I'm Jason and is my new online dwelling; this is the disjointed weblog. I am a manager at Panera Bread, a graduate of Grand Valley State University with a degree in Computer Science, a geek, a runner and a runDisney fan. Here you will find a unique blend of tech, running and everyting I find interesting to fill the gaps. 
-
+</aside>
 
 I graduated [Grand Valley State University](http://gvsu.edu) with a degree in Computer Science. I however, have not put my degree to any use since graduation. Instead I opted to work for [Panera Bread](http://panerabread.com). Thanks to this experience learned a lot and grown as an individual. Here will live digital workspace and playground. I will share personal thoughts, refine my writing style and explore different technologies and methodologies. Things may work, things may not work and things may break. As a result, nothing here should be considered finished, polished, refined or ready for mass consumption.
 
