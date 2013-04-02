@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source "http://rubygems.org"
 #source :rubygems
 
 ##### Basic Set up for rack
@@ -18,8 +18,6 @@ gem 'coderay'                   # for coderay to make code text look pretty
 gem 'html_press'
 gem 'css_press'
 gem 'uglifier'
-gem 'json'
-gem 'github'
 
 #### For the Server
 gem 'unicorn'                   # our server of chice
