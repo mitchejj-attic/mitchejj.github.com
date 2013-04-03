@@ -1,0 +1,18 @@
+closers...
+background: rgb(15, 135, 144);
+background-image: -webkit-radial-gradient(center, circle cover, rgb(18, 165, 176), rgb(15, 135, 144));
+color: rgba(255, 255, 255, 0.901961);
+
+
+subtle text
+#867F72
+
+rgb(15, 135, 144)
+
+rgb(161, 161, 161);  main background
+rgba(255, 255, 255, 0.901961);
+
+
+
+font color
+rgba(255,255,255,0.9)
