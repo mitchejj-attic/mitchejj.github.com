@@ -1,16 +1,10 @@
 ---
+published: true
 layout: post
-title: ""
-description:
-category:
-tags: []
-source:
-   url:
-   title:
-llist:
-image:
-   url:
-   caption:
+title: "Moving to Arch?"
+tags: arch
+source: "[object Object]"
+image: "[object Object]"
 
 ---
 
