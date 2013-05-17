@@ -57,6 +57,7 @@ asset:
    #jquery: //code.jquery.com/jquery-1.9.1.min.js
    jquery: //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
 paginate: 5
+destination: _site
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
