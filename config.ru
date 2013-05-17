@@ -16,4 +16,4 @@ use Rack::Deflater
 #    :metastore => $cache,
 #    :entitystore => $cache
 #end
-run Rack::Jekyll.new(:destination => '_site')
+run Rack::Jekyll.new(:destination => 'public')
