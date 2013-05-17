@@ -26,4 +26,4 @@ gem 'rack-cache'
 #### For the heroku add-ons
 #gem 'dalli'                     #for mecahce
 #gem 'memcachier'
-gem 'newrelic_rpm'              #for poor stats
+#gem 'newrelic_rpm'              #for poor stats
