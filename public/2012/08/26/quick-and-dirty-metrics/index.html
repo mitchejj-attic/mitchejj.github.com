@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>quick and dirty metrics</title>
+    <meta name="description" content="actually its about mcache">
+    <meta name="author" content="Jason Mitchell; @mitchejj">
+	<meta name="designer" content="Jason Mitchell; @mitchejj">
+	<meta name="generator" content="Jekyll">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Le styles -->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+	<!-- <style type="text/css" media="screen and (max-width: 767px)">
+	 body {
+
+	 	background: rgb(15, 135, 144);
+background-image: -webkit-radial-gradient(center, circle cover, rgb(18, 165, 176), rgb(15, 135, 144));
+color: rgba(255, 255, 255, 0.901961);
+	 }
+
+	</style> -->
+	<style type="text/css" media="screen and (min-width: 980px)">
+		body {
+			margin-top: 25px; /* 40px to make the container go all the way to the bottom of the topbar */
+			color: #2F2F2F;
+		}
+		.theContent {
+			padding-right: 8px;
+		}
+		.about img {
+			float: left;
+			margin: 0 8px 8px 0;
+
+		}
+		.img-post {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.about {
+			text-align: left;
+		}
+		.sideRail {
+		}
+		.post {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+		a.permalink {
+			text-decoration: none;
+			color: #3d3d3d;
+		}
+		a.permalink :hover{
+			text-decoration: none;
+			color: #049cdb;			
+		}
+		.fixed-position {
+			position: fixed;
+		}
+		footer {
+			position: fixed;
+			bottom: 2%;
+			left: 1%;
+		}
+	</style>
+	<link href="http://sandbox1.stderr.me/assets/common_980.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+</head>
+<body>
+<div class="container-fluid mainContainer">
+	<div class="row-fluid">
+		<div class="span3 pureLeft">
+			<div  class="fixed-position">
+				<header class="arch-header">
+					<h1><a class="h-link" href="/">stderr | log</a><br><small>an io scratch pad</small></h1>
+				</header>
+				<aside>
+				<a href="/about/">about</a> | <a href="/tags/">tags</a> | <a href="/archive/">archive</a>
+				</aside><hr>	
+			</div>
+		</div>
+		<div class="span6 contentContainer"><!--Body content-->
+			<div class="theContent">
+			
+<!--Max Span is 9-->
+
+<article>
+	<header>
+		<hgroup class="post-header">		
+			<h2>quick and dirty metrics <small>actually its about mcache</small></h2>
+		</hgroup>
+		<div><small>
+			</small>
+		</div>
+	</header>
+	<section class="post">
+		
+<p>Now that I have github -&gt; heroku publishing in place now is the time to setup even more over kill, heroku offers a few (2)5 MB Memcache Bucket.</p>
+
+<p>I made the following changes to <code>config.ru</code></p>
+
+<pre lang="ruby"><code>	if memcache_servers = ENV["MEMCACHE_SERVERS"]
+		require 'dalli'
+		require 'rack-cache'
+		require 'memcachier'
+		$cache = Dalli::Client.new
+		use Rack::Cache,
+			:verbose =&gt; true,
+			:metastore =&gt; $cache,
+			:entitystore =&gt; $cache
+	end
+</code></pre>
+
+<p>To test that caching is working use <code>ab</code> aka Apache HTTP server benchmarking tool and run <code>ab -n 500 -c 5 [hostname]</code></p>
+
+<p>This will make 500 requst to [hostname] with 5 concurrent request.</p>
+
+<p>And to see if <code>Rack::Deflater</code> is working</p>
+
+<pre lang="text"><code>	curl -I -H "Accept-Encoding: gzip,deflate" [hostname]
+</code></pre>
+
+	</section>
+</article>
+<hr>
+<div class="pagination pagination-centered">
+<ul>
+
+<li class="previous"><a href="/blog/2012/08/26/github-to-heroku-deplyment/" title="github to heroku deplyment">&larr; Previous</a></li>
+
+<li><a href="/archive/">Archive</a></li>
+
+<li class="next"><a href="/2012/09/04/giving-back/" title="Giving Back">Next &rarr;</a></li>
+
+</ul>
+</div>
+
+			</div>
+		</div>
+		<div class="span3 sideRail"> <!--Sidebar content-->
+			&nbsp;
+		</div>
+	</div>
+	<div class="row-fluid">
+	</div>
+</div>
+<footer><hr>
+	<p><small><em>Generated: 2013-05-17 07:46:39 PM</em><br>
+	Copyright &copy; 2012 &mdash;  <a href="http://twitter.com/mitchejj" title="@mitchejj">Jason Mitchell</small></p>
+</footer>
+<script async src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"><\/script>')</script>
+    <script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>

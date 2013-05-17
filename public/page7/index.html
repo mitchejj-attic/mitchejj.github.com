@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>stderr | log</title>
+    <meta name="description" content="an io scratch pad">
+    <meta name="author" content="Jason Mitchell; @mitchejj">
+	<meta name="designer" content="Jason Mitchell; @mitchejj">
+	<meta name="generator" content="Jekyll">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+	<!--[if lt IE 9]>
+		<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<!-- Le styles -->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+
+	<!-- <style type="text/css" media="screen and (max-width: 767px)">
+	 body {
+
+	 	background: rgb(15, 135, 144);
+background-image: -webkit-radial-gradient(center, circle cover, rgb(18, 165, 176), rgb(15, 135, 144));
+color: rgba(255, 255, 255, 0.901961);
+	 }
+
+	</style> -->
+	<style type="text/css" media="screen and (min-width: 980px)">
+		body {
+			margin-top: 25px; /* 40px to make the container go all the way to the bottom of the topbar */
+			color: #2F2F2F;
+		}
+		.theContent {
+			padding-right: 8px;
+		}
+		.about img {
+			float: left;
+			margin: 0 8px 8px 0;
+
+		}
+		.img-post {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.about {
+			text-align: left;
+		}
+		.sideRail {
+		}
+		.post {
+			margin-left: 16px;
+			margin-right: 16px;
+		}
+		a.permalink {
+			text-decoration: none;
+			color: #3d3d3d;
+		}
+		a.permalink :hover{
+			text-decoration: none;
+			color: #049cdb;			
+		}
+		.fixed-position {
+			position: fixed;
+		}
+		footer {
+			position: fixed;
+			bottom: 2%;
+			left: 1%;
+		}
+	</style>
+	<link href="http://sandbox1.stderr.me/assets/common_980.css" rel="stylesheet">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+	<link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=" rel="icon" type="image/x-icon" />
+	<link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+</head>
+<body>
+<div class="container-fluid mainContainer">
+	<div class="row-fluid">
+		<div class="span3 pureLeft">
+			<div  class="fixed-position">
+				<header class="arch-header">
+					<h1><a class="h-link" href="/">stderr | log</a><br><small>an io scratch pad</small></h1>
+				</header>
+				<aside>
+				<a href="/about/">about</a> | <a href="/tags/">tags</a> | <a href="/archive/">archive</a>
+				</aside><hr>	
+			</div>
+		</div>
+		<div class="span6 contentContainer"><!--Body content-->
+			<div class="theContent">
+			
+<!--Max Span is 9-->
+<div class="page">
+	
+	
+	
+	
+<article>
+	<header>
+		<hgroup class="post-header">		
+			<h2><a href="http://prose.io/">prose.io</a></h2>
+			
+		</hgroup>
+		<div><small>
+			via: 	<a href="http://jonasforsberg.se/2012/08/08/web-interface-to-jekyll-with-auto-deploy-to-heroku">http://jonasforsberg.se/2012/08/08/web-interface-to-jekyll-with-auto-deploy-to-heroku</a></small>
+		</div>
+	</header>
+	<section class="post">
+		
+<blockquote>
+  <p>Prose is a web-based interface for managing text-based content in your GitHub repositories. Use it to create, edit, and delete files, and save your changes directly to GitHub.
+<small><cite><a href="http://prose.io/">Prose</a></cite></small></p>
+</blockquote>
+
+
+	</section>
+</article>
+	<hr>
+
+	
+	
+<article>
+	<header>
+		<hgroup class="post-header">		
+			<h2>heroku <small>less than beta quality</small></h2>
+		</hgroup>
+		<div><small>
+			</small>
+		</div>
+	</header>
+	<section class="post">
+		
+<p>After playing with jekyll on Git Hub’s pages, I realized I needed something with a bit more zest. I needed plug-in support. I found Jonas Forsberg post entitled <a href="http://jonasforsberg.se/2012/07/22/jekyll-heroku-unicorn">Jekyll + Heroku + Unicorn = Blazing fast blogging</a> and basically followed the step outlined below.</p>
+
+<p><code>sudo gem install heroku</code></p>
+
+<p><code>sudo gem install bundler</code></p>
+
+<p><code>heroku auth:login</code></p>
+
+<p><code>git clone git@github.com:himynameisjonas/jekyll-heroku-unicorn.git</code></p>
+
+<p><code>cd jekyll-heroku-unicorn</code></p>
+
+<p><code>bundle install</code></p>
+
+<p><code>heroku create</code></p>
+
+<p><code>git push heroku master</code></p>
+
+<p>That lead to a complete fail.</p>
+
+<pre><code>Running: bundle install --without development:test --path vendor/bundle --binstubs bin/ --deployment
+You are trying to install in deployment mode after changing
+your Gemfile. Run `bundle install` elsewhere and add the
+updated Gemfile.lock to version control.
+You have added to the Gemfile:
+* source: https://github.com/adaoraul/ra... (at master)
+You have deleted from the Gemfile:
+* source: git://github.com/adaoraul/rack... (at master)
+You have changed in the Gemfile:
+* rack-jekyll from `https://github.com/adaoraul/ra... (at master)` to `no specified source`
+</code></pre>
+
+<p>Time to regroup, I searched around and found a nice how-to guide, <a href="http://www.thomas.stachl.me/blog/2012/05/26/jekyll-on-heroku.html">Jekyll on Heroku</a> by Thomas Stachl. It seem straight forward, yet it to failed. I looked around some more, and found <a href="http://www.mikemayo.org/2012/deploying-jekyll-sites-to-heroku-with-rack-jekyll">Deploying Jekyll sites to Heroku with Rack-Jekyll</a> which gave two little snippets of code.</p>
+
+<pre><code>gem 'rack-jekyll', :git =&gt; 'https://github.com/adaoraul/rack-jekyll.git', :require =&gt; 'rack/jekyll'
+</code></pre>
+
+<p>and</p>
+
+<pre><code>require 'bundler'
+Bundler.require(:default, :production)
+
+run Rack::Jekyll.new
+</code></pre>
+
+<p>Ah-ha, why not meld all of this goodness together. Drat, another failure.</p>
+
+<pre><code>Heroku push rejected, no Cedar-supported app detected
+</code></pre>
+
+<p>Hmmm, thinking… Eureka! Wait bundler isn’t the app I wish to deploy…</p>
+
+<p>My new config.ru file</p>
+
+<pre><code>require 'bundler'
+require "rack/jekyll"
+Bundler.require(:default, :production)
+
+run Rack::Jekyll.new(:destination =&gt; 'public')
+</code></pre>
+
+<p>My Gemfile</p>
+
+<pre><code>source :rubygems
+
+gem "rake"                # actually not need for heroku but for the provided Rakefile
+gem "RedCloth"            # if you want to use the Textile Markup Language
+#gem "jekyll", "~&gt; 0.11.2" # we need at least this version so jekyll will use Ruby 1.9.2
+gem 'rack-jekyll', :git =&gt; 'https://github.com/adaoraul/rack-jekyll.git', :require =&gt; 'rack/jekyll'
+#gem "foreman"             # this is a tool to test and use the Procfile locally
+gem "heroku"              # if you install the Heroku Toolbelt you won't need this but it's good practice
+gem 'unicorn'
+</code></pre>
+
+<p>My Procfile</p>
+
+<pre><code>web: bundle exec unicorn -p $PORT -c ./unicorn.rb
+</code></pre>
+
+<p>My unicorn.rb</p>
+
+<pre><code>worker_processes 4 # amount of unicorn workers to spin up
+timeout 30         # restarts workers that hang for 30 seconds
+preload_app true   # avoid regeneration of jekyll site for each fork
+</code></pre>
+
+<p>Once I deployed the app in the cloud had some curious extra data. I noticed I also forgot to included a Procfile file. I added the relevant lines redeployed the app and now I just crash. One wobbly step forward. After some thought, I noticed I forgot to include the unicorn config file. #fail.</p>
+
+<h5 id="coderay">coderay</h5>
+<p>I chose you use <code>coderay_css: style</code> to stylize code, this provides for inline styling. Since I dnon’t plan on providing much code examples on the site, so I don’t want to server up that style sheet all the time. However, if your planning on having alot of code snippits <code>coderay_css: css</code> is your option and generate your style sheet via <code>coderay stylesheet &gt; coderay.css</code></p>
+
+<h5 id="prerequisites">Prerequisites</h5>
+<p>Xcode – Xcode -&gt; Preferences -&gt; Downlads -&gt; Install Command Line Tools</p>
+
+<p><code>ruby &lt;(curl -fsSk https://raw.github.com/mxcl/homebrew/go)</code></p>
+
+<p><code>brew install git</code></p>
+
+<p><code>gem update --system</code></p>
+
+<p><code>gem install jekyll</code></p>
+
+<p><code>gem install bundler</code></p>
+
+<p><code>gem install heroku</code></p>
+
+	</section>
+</article>
+	<hr>
+
+	
+	
+<article>
+	<header>
+		<hgroup class="post-header">		
+			<h2>Hello World</h2>
+		</hgroup>
+		<div><small>
+			</small>
+		</div>
+	</header>
+	<section class="post">
+		
+<p>Nothing to see here, yet. Just another amoeba learning to walk, look lively as you exit on the left.</p>
+
+	</section>
+</article>
+	<hr>
+
+	
+	
+<article>
+	<header>
+		<hgroup class="post-header">		
+			<h2>test_video <small></small></h2>
+		</hgroup>
+		<div><small>
+			</small>
+		</div>
+	</header>
+	<section class="post">
+		
+
+	</section>
+</article>
+	<hr>
+
+	
+	
+<article>
+	<header>
+		<hgroup class="post-header">		
+			<h2>test_video <small></small></h2>
+		</hgroup>
+		<div><small>
+			</small>
+		</div>
+	</header>
+	<section class="post">
+		
+
+	</section>
+</article>
+	<hr>
+
+
+<div class="pagination pagination-centered">
+	<ul>
+	
+		<li class="previous"><a href="/page6" title="previous">&larr; Previous fail</a></li>
+	
+	<li><a href="/archive/" title="archive">Archive</a></li>
+	
+	<li class="next disabled"><a>Next &rarr;</a>
+	
+	</ul>
+</div>
+
+</div>
+
+
+			</div>
+		</div>
+		<div class="span3 sideRail"> <!--Sidebar content-->
+			&nbsp;
+		</div>
+	</div>
+	<div class="row-fluid">
+	</div>
+</div>
+<footer><hr>
+	<p><small><em>Generated: 2013-05-17 07:46:39 PM</em><br>
+	Copyright &copy; 2012 &mdash;  <a href="http://twitter.com/mitchejj" title="@mitchejj">Jason Mitchell</small></p>
+</footer>
+<script async src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"><\/script>')</script>
+    <script async src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
