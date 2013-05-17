@@ -50,7 +50,6 @@ GEM
     multi_js (0.0.1)
       uglifier
     multi_json (1.7.3)
-    newrelic_rpm (3.6.2.96)
     posix-spawn (0.3.6)
     pygments.rb (0.5.0)
       posix-spawn (~> 0.3.6)
@@ -80,7 +79,6 @@ DEPENDENCIES
   jekyll
   kramdown
   liquid
-  newrelic_rpm
   rack
   rack-cache
   rack-jekyll!
