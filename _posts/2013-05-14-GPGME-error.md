@@ -11,7 +11,7 @@ image: "[object Object]"
 
 Just in case I run up against this again....
 
-sudo pacman -Syy
-sudo pacman-key --refresh-keys
-sudo pacman-key --populate archlinux
-sudo pacman -Scc
+	sudo pacman -Syy
+	sudo pacman-key --refresh-keys
+	sudo pacman-key --populate archlinux
+	sudo pacman -Scc
