@@ -4,10 +4,10 @@ layout: post
 title: pacman errors
 description: "error: GPGME error: No data"
 tags: arch
-source: "[object Object]"
-image: "[object Object]"
+source:
+image:
 
----
+
 
 Just in case I run up against this again....
 
