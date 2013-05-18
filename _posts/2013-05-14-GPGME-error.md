@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: pacman errors
 description: "error: GPGME error: No data"
