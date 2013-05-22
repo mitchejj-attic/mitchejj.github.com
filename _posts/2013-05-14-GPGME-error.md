@@ -6,9 +6,9 @@ description: "error: GPGME error: No data"
 tags: arch
 source:
 image:
-
-
-
+---
+{% include JB/setup %}
+{% include stderr/setup %}
 Just in case I run up against this again....
 
 	sudo pacman -Syy
