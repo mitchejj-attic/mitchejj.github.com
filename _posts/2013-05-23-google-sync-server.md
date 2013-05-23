@@ -11,3 +11,4 @@ I use [hostsblock](http://gaenserich.github.io/hostsblock/ "http://gaenserich.gi
 
 	# hostsblock-urlcheck https://clients4.google.com/
 
+(Yes I'm trying to move away from Google Services, yet I'm using Chromium go figure.)
