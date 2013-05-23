@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: "Chromium & Chrome Sync Server Address"
+description:
 tags: chromium
 source:
    url: http://elliotli.blogspot.com/2010/07/google-chrome-chromium-sync-server.html
