@@ -3,11 +3,16 @@ published: true
 layout: post
 title: "Moving to Arch?"
 tags: arch
-source: "[object Object]"
-image: "[object Object]"
-
+source:
+   url:
+   title:
+llist:
+image:
+   url:
+   caption:
 ---
-
+{% include JB/setup %}
+{% include stderr/setup %}
 A few months back I installed Ubuntu; shortly after that I moved to CrunchBang. For the most part I've enjoyed my experiences with CruncBang. The few things I haven't enjoyed where directly related to it foundation, Debian. However, I stuck with it and even upgraded the Macbook (4,1) replacing the HD with an SSD and doubling the RAM.
 
 I enjoyed the experience even more. Yet I keep feeling like the Debian base was holding me back. My use cases don't require stability. For the last week I've been tinkering with ArchLinux. First in a VM, then finally my older MacBook (2,1). The biggest headache to date, and I'm sure many more will come, has been the ability to boot the system. I was using the install CD as a bootstrap. Three days ago I started learning, more like glossing over, how EFI booting works. Slowly I was able to build a semi-working boot system.
