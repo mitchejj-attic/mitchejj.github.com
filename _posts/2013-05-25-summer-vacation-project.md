@@ -13,7 +13,7 @@ image:
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
-This week I was lucky enough to enjoy a week off from work. I am half way thru the vacation and wanted to post a stats report on [my 2013 vacation[summer] project][myLink].
+This week I was lucky enough to enjoy a week off from work. I am half way thru the vacation and wanted to post a stats report on my [vacation[summer, 2013]][myLink] project.
 
 While I do love [Crunch Bang][#!], I would like move my MacBook (4,1) to [Arch][archLinux]. I've been successful install Arch on my MacBook (2,1) yet before I wipe away my 'stable' install I must first resolve a few issues/bugs.
 
