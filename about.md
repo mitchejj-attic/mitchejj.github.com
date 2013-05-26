@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Bio
+title: whoami
+header: a bio
 tagline: guesstimating abnormality
 group: navigation
 ---
 {% include JB/setup %}
-### whoami
 <aside class="about">
 <img src="//www.gravatar.com/avatar/{{ site.author.gravatar }}?s=128" width="128" height="128" alt="me" class="img-circle" /> I'm Jason and is my new online dwelling; this is the disjointed weblog. I am a manager at Panera Bread, a graduate of Grand Valley State University with a degree in Computer Science, a geek, a runner and a runDisney fan. Here you will find a unique blend of tech, running and everyting I find interesting to fill the gaps. 
 </aside>

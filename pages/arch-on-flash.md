@@ -1,15 +1,13 @@
 ---
 layout: page
-title: "Arch Linux on USB Flash"
-description: "Crafting MacBook (2,1) & (4,1) solution"
+title: "vacation[summer, 2013]"
+header: "Arch Linux on USB Flash"
 category: project
 tags: arch linux
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
-##vacation[summer, 2013]
 
-###{{ page.title }}
 
 The first step is to download the official ISO, well maybe. I've never been able to make any of my MacBook's to boot the EFISTUB. In fact I haven't been able to make a VM boot an EFISTUB yet. Before writeing this little post I was never able to get any version of Linux to boot off a flash drive on my MacBook (2,1)
 
@@ -66,6 +64,8 @@ Now the fun part, getting it all to boot. This where I also run into many proble
 	# bash <(curl aur.sh) -si mactel-boot
 
  I want to use refind, a I can easily drop into the EFI shell if the need exist, this would/should also work for Gummiboot to I suppose. I also like to use GRUB2 to keep it 'simple'... go figure I said simple grub2 in the same sentence... maybe this isn't so pure.
+
+### Crafting MacBook (2,1) & (4,1) solution
 
  First move refind in place:
 
