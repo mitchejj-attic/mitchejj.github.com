@@ -1,10 +1,10 @@
 _site/*
 _theme_packages/*
 _scratch/*
+public/*
 .sparkleshare
 Thumbs.db
 .DS_Store
 !.gitkeep
-
 .rbenv-version
 .rvmrc
