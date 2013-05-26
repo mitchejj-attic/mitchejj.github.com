@@ -7,9 +7,7 @@ tags: arch linux
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
-
-
-The first step is to download the official ISO, well maybe. I've never been able to make any of my MacBook's to boot the EFISTUB. In fact I haven't been able to make a VM boot an EFISTUB yet. Before writeing this little post I was never able to get any version of Linux to boot off a flash drive on my MacBook (2,1)
+The first step is to download the official ISO, well maybe. I've never been able to make any of my MacBook's to boot the EFISTUB. Maybe adding the boot options `noapic`, `noapic`, `nomodeset` In fact I haven't been able to make a VM boot an EFISTUB yet. Before writeing this little post I was never able to get any version of Linux to boot off a flash drive on my MacBook (2,1)
 
 		### Are Comments
 	# run this as root or sudo
@@ -29,7 +27,7 @@ It is important to mount everything in the proper order and location for this ap
 ### Install
 I know I want, need a few tools installed (I have systems with both 32 & 64 bit efi's thus I need booth versions of grub):
 
-	# pacstrap  -i /mnt base arch-install-scripts dosfstools mtools gptfdisk openssh avahi nss-mdns wpa_supplicant wpa_actiond wireless_tools zsh grub-efi-x86_64 grub-efi-i386 refind-efi
+	# pacstrap  -i /mnt base zsh
 
 Here on out I follow the basic install guide
 	
@@ -40,6 +38,8 @@ Here on out I follow the basic install guide
 	# arch-chroot /mnt /bin/zsh
 	# chsh /bin/zsh
 
+	# pacman -S arch-install-scripts dosfstools mtools gptfdisk openssh avahi nss-mdns wpa_supplicant wpa_actiond wireless_tools dialog grub-efi-x86_64 grub-efi-i386 refind-efi
+
 	# ln -s /usr/share/zoneinfo/America/Boston /etc/localtime
 	# echo archFlash > /etc/hostname
 
@@ -49,7 +49,7 @@ Here on out I follow the basic install guide
 
 		## Only make protocol 2 keys
 	# ssh-keygen -t ecdsa -b 521 -f  /etc/ssh/ssh_host_ecdsa_key -N ''
-	# ssh-keygen -t rsa -b 15360 -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
+	# ssh-keygen -t rsa -b 15360 -f /etc/ssh/ssh_host_rsa_key -N ''
 
 Yes, a 15360-bit rsa key is a bit insane, a 3072-bit or even 2048-bit key would have been more than sufficient.
 
@@ -65,7 +65,7 @@ Now the fun part, getting it all to boot. This where I also run into many proble
 
  I want to use refind, a I can easily drop into the EFI shell if the need exist, this would/should also work for Gummiboot to I suppose. I also like to use GRUB2 to keep it 'simple'... go figure I said simple grub2 in the same sentence... maybe this isn't so pure.
 
-### Crafting MacBook (2,1) & (4,1) solution
+### Crafting a MacBook (2,1) & (4,1) solution
 
  First move refind in place:
 
@@ -143,6 +143,7 @@ Have a 1MB buffer between partitions (including the first entry and last)
 	- mkdir -P /var/unstable
 	- mount /dev/sdXY /var/unstable
 
+**Notes:** this install also works just fine on a MacBookPro(9,2)
 
 [wikiUSB]: https://wiki.archlinux.org/index.php/Usb_install
 [fastSwap]: http://fenidik.blogspot.com/2010/03/ext4-di-sable-journal.html
