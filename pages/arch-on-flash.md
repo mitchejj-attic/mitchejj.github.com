@@ -2,6 +2,7 @@
 layout: page
 title: "Arch Linux on USB Flash"
 description: "Crafting MacBook (2,1) & (4,1) solution"
+category: project
 tags: arch linux
 ---
 {% include JB/setup %}
