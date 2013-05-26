@@ -6,7 +6,7 @@ tags: arch linux
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
-## 2013 vacation[summer] project
+##vacation[summer, 2013]
 
 ###{{ page.title }}
 
