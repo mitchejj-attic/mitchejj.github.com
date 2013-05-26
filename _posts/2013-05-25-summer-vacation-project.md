@@ -3,7 +3,6 @@ layout: post
 title: "Creating an Arch Flash Drive"
 description: "For my MacBook's"
 tags: arch linux macbook
-category: test
 source:
    url:
    title:
