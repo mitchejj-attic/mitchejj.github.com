@@ -18,3 +18,4 @@ Site generation: {{ site.time | date: "%Y-%m-%d %I:%M:%S %p"  }}
 	- via Bootsrap CDN
 - jQuery
 	-via jQuery or Google CDN's
+- prose.io
