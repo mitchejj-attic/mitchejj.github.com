@@ -22,4 +22,5 @@ Overall I must say the GOrun m is currently favorite shoe. I don't know if I cou
 
 [goRun]: http://skechersperformance.com/running/mens#/53555-gorun2
 [goRunInfo]: http://www.skechers.com/info/gorun2
+
 [goRunNote]: the goRun has a 4mm drop, and on a geekier note to bad Skechers didn't fallow camel case and name the shoe goRun or goRUN.
