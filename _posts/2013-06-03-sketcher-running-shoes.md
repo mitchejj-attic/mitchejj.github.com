@@ -3,7 +3,7 @@ published: true
 layout: post
 title: "Daily Comfort"
 description: "Sketchers Go Run M"
-tags:
+tags: running
 source:
    url:
    title:
