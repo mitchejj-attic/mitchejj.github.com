@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "Daily Comfort"
 description: "Sketchers Go Run M"
