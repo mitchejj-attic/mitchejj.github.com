@@ -22,8 +22,8 @@ Cinnamon has some of the same 'issues' found in GNOME. Cinnamon being a GNOME de
 
  	Section "InputClass"
  		...
- 		Option     "VertScrollDelta"      "-111"
- 		Option     "HorizScrollDelta"     "-111"
+ 		Option	"VertScrollDelta"		"-111"
+ 		Option	"HorizScrollDelta"		"-111"
  	 	...
  	EndSection
 
