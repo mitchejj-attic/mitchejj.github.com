@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "falsity of sure things"
 description: "natural scrolling with cinnamon"
