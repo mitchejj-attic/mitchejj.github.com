@@ -19,12 +19,14 @@ My [2013[summer,vacation]][myLink] ended and I continue to evaluate and tinker w
 Cinnamon has some of the same 'issues' found in GNOME. Cinnamon being a GNOME derivative has a plethora of hidden settings. One such setting is natural scrolling. While I have natural scrolling correctly configure in xorg.conf{.d}
 
 
+
  	Section "InputClass"
  	   ...
  	   Option     "VertScrollDelta"      "-111"
  	   Option     "HorizScrollDelta"     "-111"
  	   ...
  	EndSection
+
 
 
 Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some tweaking in in order. I could use `dconf-editor` to follow the bread crumbs along the schema path below to alter the key value. A much simpler and dare I say elegant solution exist:
