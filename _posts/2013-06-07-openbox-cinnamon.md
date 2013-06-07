@@ -27,7 +27,7 @@ Electing to use Cinnamon would be taking the easy way out along with the baggage
 	   Option   "HorizScrollDelta"    "-111"
 	   ...
 	EndSection
-s
+	
 
 Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some tweaking in in order. I could use `dconf-editor` to follow the bread crumbs along the schema path below to alter the key value. A much simpler and dare I say elegant solution exist:
 
