@@ -34,8 +34,8 @@ Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some
 
 [^baggage]: I wish Cinnamon was an independant [project][cMonProject] and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX is at the whim of the Mint dev team[^extBaggage].
 
-[^extBaggage]: Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop. It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug
-<small><cite>[Clement Lefebvre][clem]</cite></small>
+[^extBaggage]: Words of [Clement Lefebvre][clem] "Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop. It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug.""
+
 
 
 [#!]: http://crunchbang.org
