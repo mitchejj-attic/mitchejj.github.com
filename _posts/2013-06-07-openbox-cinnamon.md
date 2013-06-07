@@ -32,7 +32,7 @@ Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some
 	gsettings set org.gnome.settings-daemon.peripherals.touchpad natural-scroll "true"
 
 
-[^baggage]: I wish Cinnamon was an independant project and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX is at the whim of the Mint dev team.
+[^baggage]: I wish Cinnamon was an independant [project][cMonProject] and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX is at the whim of the Mint dev team.
 > Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop. It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug
 ><small><cite>[Clement Lefebvre][clem]</cite></small>
 
@@ -41,4 +41,5 @@ Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some
 [myLink]: ../pages/arch-on-flash
 [openBox]: http://openbox.org/
 [cMon]: http://cinnamon.linuxmint.com/
+[cMonProject]: https://github.com/linuxmint/cinnamon	"Cinnamon Git Hub Project"
 [clem]: https://github.com/linuxmint/Cinnamon/issues/1828#issuecomment-16286688
