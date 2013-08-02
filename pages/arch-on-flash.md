@@ -15,7 +15,7 @@ The first step is to download the official ISO, well maybe. I've never been able
 I will opt install a small system on a flash drive and use that as my installer, this will have other benefits including using it portable system and rescue drive and most importantly and learning device. Using my current Arch install I just need to install arch-install-scripts.
 
 ### Prep the USB Flash Drive
-I used gparted (yes, I am using Arch and GUI tools for this) to created a GPT along with two partitions. It is my personal preference to make my EFI drive my first partition so `/dev/sdc1` is 512MB fat32 partion wwhich will be placed at /boot. Oh, apparently fat32 file systems shouldn't be less than 512MB, you could make it smaller but I really didn't see a reason to, I think I also should I have set the boot flag. The second drive partition will be for everything, I chose to make `/dev/sdc2` a 1GB ext4 partition for /. I know ext4 and a 1GB partition is beyond overkill for this particular application, just go with it for now, and use `lsblk` to ensure the right drive is being used.
+I used gparted (yes, I am using Arch and GUI tools for this) to created a GPT along with two partitions. It is my personal preference to make my EFI drive my first partition so `/dev/sdc1` is 512MB fat32[^fat32FS] partion wwhich will be placed at /boot. Oh, apparently fat32 file systems shouldn't be less than 512MB, you could make it smaller but I really didn't see a reason to, I think I also should I have set the boot flag. The second drive partition will be for everything, I chose to make `/dev/sdc2` a 1GB ext4 partition for /. I know ext4 and a 1GB partition is beyond overkill for this particular application, just go with it for now, and use `lsblk -f` to ensure the right drive is being used.
 
 It is important to mount everything in the proper order and location for this application / followed by boot:
 
@@ -148,3 +148,4 @@ Have a 1MB buffer between partitions (including the first entry and last)
 [wikiUSB]: https://wiki.archlinux.org/index.php/Usb_install
 [fastSwap]: http://fenidik.blogspot.com/2010/03/ext4-di-sable-journal.html
 [extDiff]: http://www.thegeekstuff.com/2011/05/ext2-ext3-ext4/
+[^fat32fs]: `sudo mkfs.vfat -c -F32 /dev/sdc1 -n flashBoot -v`
