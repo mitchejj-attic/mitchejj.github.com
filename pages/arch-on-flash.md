@@ -148,4 +148,6 @@ Have a 1MB buffer between partitions (including the first entry and last)
 [wikiUSB]: https://wiki.archlinux.org/index.php/Usb_install
 [fastSwap]: http://fenidik.blogspot.com/2010/03/ext4-di-sable-journal.html
 [extDiff]: http://www.thegeekstuff.com/2011/05/ext2-ext3-ext4/
+
+
 [^fat32fs]: `sudo mkfs.vfat -c -F32 /dev/sdc1 -n flashBoot -v`
