@@ -67,7 +67,7 @@ Now the fun part, getting it all to boot. This where I also run into many proble
 
 ### Crafting a MacBook (2,1) & (4,1) solution
 
- First move refind in place:
+ First move refind in place [^refindUpdate]:
 
 	# cp /usr/lib/refind_x64.efi /boot/EFI/boot/bootx64.efi
 	# cp /usr/lib/refind_ia32.efi /boot/EFI/boot/bootia32.efi
@@ -145,9 +145,22 @@ Have a 1MB buffer between partitions (including the first entry and last)
 
 **Notes:** this install also works just fine on a MacBookPro(9,2)
 
+**Update:** I suffered some drive issue with the flash drive. pacman became croupt (the binaries where zeroed out) and the /boot partition was destroyed. I was able to reinstall pacman by downloading the source:
+
+	# curl -O ftp://ftp.archlinux.org/other/pacman/pacman-4.1.2.tar.gz
+	# tar -x pacman.tar.gz
+	# cd pacman
+	# configure ./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var
+	# make
+	# make install
+	# pacman -S $(pacman -Qnq) [^pacmanNote]
+
 [wikiUSB]: https://wiki.archlinux.org/index.php/Usb_install
 [fastSwap]: http://fenidik.blogspot.com/2010/03/ext4-di-sable-journal.html
 [extDiff]: http://www.thegeekstuff.com/2011/05/ext2-ext3-ext4/
 
 
+
 [^fat32]: `sudo mkfs.vfat -c -F32 /dev/sdc1 -n flashBoot -v`
+[^refindUpdate]: Everything moved to /usr/share/refind/ need to update this section.
+[^pacmanNote]: This reinstalls 'all' packages... While it may not be needed, I just found I ran into a few issues where other libs where also croupted. If flash drive was supposed to be used for anything other than play/test and installer I would have wiped the drive and started fresh.
