@@ -38,7 +38,8 @@ Here on out I follow the basic install guide
 	# arch-chroot /mnt /bin/zsh
 	# chsh /bin/zsh
 
-	# pacman -S arch-install-scripts dosfstools mtools gptfdisk openssh avahi nss-mdns wpa_supplicant wpa_actiond wireless_tools dialog grub-efi-x86_64 grub-efi-i386 refind-efi
+	# pacman -S arch-install-scripts dosfstools mtools gptfdisk openssh rng-tools avahi nss-mdns wpa_supplicant wpa_actiond wireless_tools dialog 
+grub-efi-x86_64 grub-efi-i386 refind-efi 
 
 	# ln -s /usr/share/zoneinfo/America/Boston /etc/localtime
 	# echo archFlash > /etc/hostname
@@ -48,6 +49,7 @@ Here on out I follow the basic install guide
 	# locale-gen && hwclock --systohc --utc
 
 		## Only make protocol 2 keys
+	# rngd -f -r /dev/urandom
 	# ssh-keygen -t ecdsa -b 521 -f  /etc/ssh/ssh_host_ecdsa_key -N ''
 	# ssh-keygen -t rsa -b 15360 -f /etc/ssh/ssh_host_rsa_key -N ''
 
