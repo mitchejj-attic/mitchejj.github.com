@@ -11,8 +11,8 @@ header : Standard Error, the blog
 	<hr>
 {% endfor  %}
 
-<div class="pagination pagination-centered">
-	<ul class="pagination pagination">
+<div class="pagerLike">
+	<ul class="pagination">
 	{% if paginator.previous_page > 1 %}
 		<li class="previous"><a href="{{ BASE_PATH }}/page{{paginator.previous_page}}" title="previous">&larr; Previous fail</a></li>
 	{% elsif paginator.previous_page == 1 %}
