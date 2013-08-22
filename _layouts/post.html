@@ -1,12 +1,12 @@
 ---
-layout: default
+layout: default3
 ---
 {% include stderr/setup %}
 <!--Max Span is 9-->
 {% include stderr/io %}
 <hr>
-<div class="pagination pagination-centered">
-<ul>
+<div class="pagerLike">
+<ul class="pagination">
 {% if page.previous %}
 <li class="previous"><a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a></li>
 {% else %}
