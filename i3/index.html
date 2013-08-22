@@ -12,19 +12,19 @@ header : Standard Error, the blog
 {% endfor  %}
 
 <div class="pagination pagination-centered">
-	<ul class="pagination pagination-lg pager">
+	<ul class="pagination pagination-lg">
 	{% if paginator.previous_page > 1 %}
-		<li class="next"><a href="{{ BASE_PATH }}/page{{paginator.previous_page}}" title="previous">&larr; Previous fail</a></li>
+		<li class="previous"><a href="{{ BASE_PATH }}/page{{paginator.previous_page}}" title="previous">&larr; Previous fail</a></li>
 	{% elsif paginator.previous_page == 1 %}
-		<li class="next"><a href="{{ BASE_PATH }}/" title="previous">&larr; Previous</a></li>
+		<li class="previous"><a href="{{ BASE_PATH }}/" title="previous">&larr; Previous</a></li>
 	{% else %}
-	<li class="next disabled"><a>&larr; Previous</a></li>
+	<li class="previous disabled"><a>&larr; Previous</a></li>
 	{% endif %}
-	<li class=""><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" title="archive">Archive</a></li>
+	<li><a href="{{ BASE_PATH }}{{ site.JB.archive_path }}" title="archive">Archive</a></li>
 	{% if paginator.next_page %}
-	<li class="previous"><a href="{{ BASE_PATH }}/page{{paginator.next_page}}" title="next">Next &rarr;</a></li>
+	<li class="next"><a href="{{ BASE_PATH }}/page{{paginator.next_page}}" title="next">Next &rarr;</a></li>
 	{% else %}
-	<li class="previous disabled"><a>Next &rarr;</a>
+	<li class="next disabled"><a>Next &rarr;</a>
 	{% endif %}
 	</ul>
 </div>
