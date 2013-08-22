@@ -1,5 +1,5 @@
 ---
-layout: blog3
+layout: blog
 title: "stderr | log"
 description: "an io scratch pad"
 header : Standard Error, the blog
@@ -11,8 +11,8 @@ header : Standard Error, the blog
 	<hr>
 {% endfor  %}
 
-<div class="pagination pagination-centered">
-	<ul>
+<div class="pagerLike">
+	<ul class="pagination">
 	{% if paginator.previous_page > 1 %}
 		<li class="previous"><a href="{{ BASE_PATH }}/page{{paginator.previous_page}}" title="previous">&larr; Previous fail</a></li>
 	{% elsif paginator.previous_page == 1 %}
