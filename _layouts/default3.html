@@ -95,39 +95,6 @@ color: rgba(255, 255, 255, 0.901961);
 			&nbsp;
 		</div>
 	</div>
-
-
-
-
-<hr>
-<hr>
-
-
-<div class="container-fluid mainContainer">
-
-	<div class="row">
-		<div class="span3 pureLeft">
-			<div  class="fixed-position">
-				<header class="arch-header">
-					<h1><a class="h-link" href="{{ HOME_PATH }}">{{ site.title }}</a><br><small>{{ site.tagline }}</small></h1>
-				</header>
-				<aside>
-				<a href="{{ site.JB.about_path }}">about</a> | <a href="{{ site.JB.tags_path}}">tags</a> | <a href="{{ site.JB.archive_path}}">archive</a>
-				</aside><hr>	
-			</div>
-		</div>
-		<div class="span6 contentContainer"><!--Body content-->
-			<div class="theContent">
-			{{ content }}
-			</div>
-		</div>
-		<div class="span3 sideRail"> <!--Sidebar content-->
-			&nbsp;
-		</div>
-	</div>
-	<div class="row-fluid">
-	</div>
-</div>
 <footer><hr>
 	<p><small><em>Generated: {{ site.time | date: "%Y-%m-%d %I:%M:%S %p"  }}</em><br>
 	Copyright &copy; 2012 &mdash; 2013  <a href="http://twitter.com/{{ site.author.twitter }}" title="@{{ site.author.twitter }}">{{ site.author.name }}</small></p>
