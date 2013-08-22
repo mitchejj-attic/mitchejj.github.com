@@ -7,6 +7,7 @@
     {% if site.author.name %}<meta name="author" content="{{ site.author.name }}; {% if site.author.twitter %}@{{ site.author.twitter }}{% endif %}">{% endif %}
 	{% if site.author.name %}<meta name="designer" content="{{ site.author.name }}; {% if site.author.twitter %}@{{ site.author.twitter }}{% endif %}">{% endif %}
 	<meta name="generator" content="Jekyll">
+
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
 	<!--[if lt IE 9]>
@@ -74,7 +75,10 @@ color: rgba(255, 255, 255, 0.901961);
 </head>
 <body>
 <div class="container-fluid mainContainer">
-	<div class="row-fluid">
+	<div class="row">
+		<div class="col-sm-2 col-sm-offset-3"> something </div>
+	</div>
+	<div class="row">
 		<div class="span3 pureLeft">
 			<div  class="fixed-position">
 				<header class="arch-header">
