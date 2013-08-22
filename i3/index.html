@@ -12,7 +12,7 @@ header : Standard Error, the blog
 {% endfor  %}
 
 <div class="pagination pagination-centered">
-	<ul class="pagination pagination-sm">
+	<ul class="pagination pagination-sm pager">
 	{% if paginator.previous_page > 1 %}
 		<li class="previous"><a href="{{ BASE_PATH }}/page{{paginator.previous_page}}" title="previous">&larr; Previous fail</a></li>
 	{% elsif paginator.previous_page == 1 %}
