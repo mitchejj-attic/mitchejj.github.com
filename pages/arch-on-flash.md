@@ -88,7 +88,7 @@ Next, grub, this will throw out four fatal warnings/errors, yet it works.
 	# cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
 	# grub-mkconfig -o /boot/grub/grub.cfg
 
-MAYBE: The EFI secret source sauce is to `add_efi_memmap` to the boot options otherwise your booting (I think, in legacy mode, BIOS compatible mode). edit `/etc/default/grub` and find the line 'GRUB_CMDLINE_LINUX' and add the sauce.
+MAYBE: The EFI secret source sauce is to `add_efi_memmap` to the boot options otherwise your booting (I think, in legacy mode, BIOS compatible mode). edit `/etc/default/grub` and find the line 'GRUB_CMDLINE_LINUX' and add the sauce. Also to see if you booted via EFI try `[ -d /sys/firmware/efi ] && echo "EFI boot on HDD" || echo "Legacy boot on HDD"`.
 
 
 Setting up mDNS (see previous posting on avahi)
