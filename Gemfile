@@ -15,6 +15,10 @@ gem 'kramdown'                  # i wish to use kramdown
 gem 'coderay'                   # for coderay to make code text look pretty
 gem 'pygmentize'				# lets try not to use coderay
 
+##### For Flicker plugin
+gem 'RedCloth'
+gem 'jekyll'
+gem 'fleakr'
 
 ##### Add-ons for Plugins
 gem 'html_press'
