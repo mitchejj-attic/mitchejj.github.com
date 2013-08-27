@@ -52,6 +52,7 @@ GEM
     multi_json (1.7.9)
     newrelic_rpm (3.6.6.147)
     posix-spawn (0.3.6)
+    pygmentize (0.0.3)
     pygments.rb (0.5.2)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
@@ -82,6 +83,7 @@ DEPENDENCIES
   kramdown
   liquid
   newrelic_rpm
+  pygmentize
   rack
   rack-cache
   rack-jekyll!
