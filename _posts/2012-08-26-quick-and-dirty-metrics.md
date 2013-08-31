@@ -30,5 +30,4 @@ This will make 500 requst to [hostname] with 5 concurrent request.
 
 And to see if `Rack::Deflater` is working
 
-		curl -I -H "Accept-Encoding: gzip,deflate" [hostname]
-{:lang="text"}
+	curl -I -H "Accept-Encoding: gzip,deflate" [hostname]
