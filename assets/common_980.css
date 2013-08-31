@@ -40,10 +40,20 @@ body {
  		.fixed-position {
 			position: fixed;
 		}
+		footer {
+			position: fixed;
+			bottom: 2%;
+			left: 1%;
+		}
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { ... }
  		.fixed-position {
 			position: fixed;
+		}
+		footer {
+			position: fixed;
+			bottom: 2%;
+			left: 1%;
 		}
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { ... }
