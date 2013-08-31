@@ -1,7 +1,7 @@
 /*
 	Credit: https://github.com/mojombo/tpw/blob/master/css/syntax.css
 */
-.highlight  { background: #ffffff; }
+.highlight  { background: #ffffff; 	font: normal normal normal 115%/normal 'Monaco', 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', monospace !important; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
