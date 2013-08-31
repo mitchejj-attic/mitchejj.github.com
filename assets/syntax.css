@@ -1,8 +1,8 @@
 /*
 	Credit: https://github.com/mojombo/tpw/blob/master/css/syntax.css
 */
-.highlight span { font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace; }
-.highlight .c { color: #999988; font-style: italic;} /* Comment */
+.highlight  { background: #ffffff;  font-family: "Consolas", "Courier New", "Courier", "FreeMono", monospace;}
+.highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
 .highlight .k { font-weight: bold } /* Keyword */
 .highlight .o { font-weight: bold } /* Operator */
