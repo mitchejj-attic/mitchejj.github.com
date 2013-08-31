@@ -42,23 +42,22 @@ a.permalink :hover{
 	text-decoration: none;
 	color: #049cdb;			
 }
+.pagerLike {
+	text-align: center;
+}
+.about img {
+	float: left;
+	margin: 0 8px 8px 0;
 
-		.pagerLike {
-			text-align: center;
-		}
-		.about img {
-			float: left;
-			margin: 0 8px 8px 0;
-
-		}
-		.img-post {
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.about {
-			text-align: left;
-		}
+}
+.img-post {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.about {
+	text-align: left;
+}
 
 
 
