@@ -59,7 +59,7 @@ icon:
    widget: icon-ellipsis-vertical
    list: icon-caret-right
 paginate: 5
-paginate_path: 'ioLog:num'
+paginate_path: 'page:num'
 destination: public
 
 
