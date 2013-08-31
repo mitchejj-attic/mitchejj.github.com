@@ -20,7 +20,7 @@ group: navigation
 		{% for item in site.tags %}
 			{% if forloop.first %}
 				<section class="tab-pane " id="{{ item[0] }}">
-				<ul class="unstyled">
+				<ul class="list-unstyled">
 				{% for node in item[1] %}
 					{% if node.title != null %}
 						<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>

@@ -13,20 +13,20 @@ header : Post Archive
 		{% for node in site.posts  %}																{% assign _this_year_ = node.date | date: "%Y" %}		{% assign _next_year_ = node.previous.date | date: "%Y" %}
 		{% if forloop.first %}
 		 <section class="tab-pane active" id="{{ _this_year_ }}">
-		 	<ul class="unstyled">
-		 		<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+		 	<ul class="list-unstyled">
+		 		<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time> <i class="{{ site.icon.widget }} icon-muted"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 		{% elsif forloop.last %}
-				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time> <i class="{{ site.icon.widget }} icon-muted"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 			</ul>
 		</section>
 		{% elsif _this_year_ != _next_year_ %}
-				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time> <i class="{{ site.icon.widget }} icon-muted"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 			</ul>
 		</section>
 		<section class="tab-pane" id="{{ _next_year_ }}">
 			<ul class="list-unstyled"> 
 		 {% elsif _this_year_ == _this_year_ %}
-				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time> <i class="{{ site.icon.widget }} icon-muted"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 		 {% endif %}
 		 {% endfor %}
 	</div>

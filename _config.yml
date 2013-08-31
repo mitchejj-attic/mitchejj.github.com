@@ -58,6 +58,10 @@ asset:
    icons: //netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css
    jquery: //code.jquery.com/jquery-1.10.0.min.js
    #jquery: //ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js
+icon:
+   visited: icon-bookmark
+   unvisited: icon-bookmark-empty
+   widget: icon-ellipsis-vertical
 paginate: 5
 destination: public
 
