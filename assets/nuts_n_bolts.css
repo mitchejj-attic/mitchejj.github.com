@@ -64,15 +64,18 @@ a.permalink :hover{
 	footer {
 		position: fixed;
 		bottom: 2%;
-		left: 1%;	}
+		left: 1%;
+	}
 }
-
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
 	footer {
 		position: fixed;
 		bottom: 2%;
 		left: 1%;
+	}
+		.fixed-position {
+		position: fixed;
 	}
 }
 /* Landscape phone to portrait tablet */
