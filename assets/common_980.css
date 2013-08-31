@@ -73,11 +73,11 @@ a.permalink :hover{
 	}
 }
 /* Landscape phones and down */
-@media (max-width: 480px)
-.fixed-position {
-	position: fixed;
+@media (max-width: 480px) {
+	.fixed-position {
+		position: fixed;
+	}
 }
-
 
 /*a:link {
 	color: #DED8D7;
