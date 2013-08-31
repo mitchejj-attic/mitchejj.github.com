@@ -15,14 +15,8 @@ kramdown:
   footnote_nr: 1
   entity_output: as_char
   toc_levels: 1..6
-  use_coderay: true
-#  coderay:
-#    coderay_wrap: div
-#    #coderay_line_numbers: inline
-#    #coderay_line_numbers_start: 1
-#    coderay_tab_width: 3
-#    #coderay_bold_every: 5
-#    coderay_css: style    
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+
 prose:
    metadata:
       "_posts": |
