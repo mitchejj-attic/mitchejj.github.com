@@ -63,14 +63,15 @@ a.permalink :hover{
 @media (min-width: 1200px)
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px)
+@media (min-width: 768px) and (max-width: 979px) {
 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px)
-.fixed-position {
-	position: fixed;
 }
-
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	{.fixed-position {
+		position: fixed;
+	}
+}
 /* Landscape phones and down */
 @media (max-width: 480px)
 .fixed-position {
