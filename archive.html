@@ -24,7 +24,7 @@ header : Post Archive
 			</ul>
 		</section>
 		<section class="tab-pane" id="{{ _next_year_ }}">
-			<ul class="unstyled"> 
+			<ul class="list-unstyled"> 
 		 {% elsif _this_year_ == _this_year_ %}
 				<li><small class="muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time><i class="icon-caret-right"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
 		 {% endif %}
