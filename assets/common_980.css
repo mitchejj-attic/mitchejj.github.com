@@ -78,6 +78,11 @@ footer {
 .fixed-position {
 	position: fixed;
 }
+footer {
+	position: fixed;
+	bottom: 2%;
+	left: 1%;
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px)
