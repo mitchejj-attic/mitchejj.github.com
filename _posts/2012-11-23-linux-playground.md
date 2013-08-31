@@ -3,7 +3,7 @@ layout: post
 title: 'Linux Playground'
 description:
 category: 
-tags: [linux]
+tags: linux
 source:
    url:
    title:
@@ -13,7 +13,6 @@ image:
    caption:
 published: true
 ---
-
 {% include JB/setup %}
 {% include stderr/setup %}
 I've been playing with Linux on two old Macbooks (4,1 and 2,1). The 4,1 system has Ubuntu while the 2,1 system is running Crunchbang. To me the stock Ubuntu install is a bit to much for me, and I much prefer the Crunchbang install. However I have EFI boot issues with the CB install.
