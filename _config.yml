@@ -50,7 +50,7 @@ author :
   github : mitchejj
   twitter : mitchejj
   feedburner : nil
-
+timezone: America/New_York
 asset:
    #css: //netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css
    css: //netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css
