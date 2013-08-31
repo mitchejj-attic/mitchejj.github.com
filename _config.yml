@@ -8,7 +8,6 @@ exclude: ['public', 'test_metric', 'siteSpec', 'bin', 'vendor', 'lessons', 'Gemf
 pygments: true
 #markdown: maruku
 relative_permalinks: true
-#baseurl:     /
 markdown: kramdown
 kramdown:
   auto_ids: true,
