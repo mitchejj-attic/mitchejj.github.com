@@ -37,10 +37,14 @@ body {
 
 /* Large desktop */
 @media (min-width: 1200px) { ... }
- 
+ 		.fixed-position {
+			position: fixed;
+		}
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) { ... }
- 
+ 		.fixed-position {
+			position: fixed;
+		}
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) { ... }
  
