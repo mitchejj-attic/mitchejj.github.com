@@ -20,12 +20,12 @@
 	font-weight: 400;
 	text-transform: lowercase;
 }
-.post {
+.post_style {
 	font-family: 'Sintony', sans-serif;
 	font-style: normal;
 	font-weight: 400;
 }
-.pubdate {
+.pubdate_style {
 	font-family: 'Sintony', sans-serif;
 	font-style: normal;
 	font-weight: 400;
@@ -60,10 +60,19 @@ a.permalink :hover{
 }
 
 /* Large desktop */
-@media (min-width: 1200px)
+@media (min-width: 1200px) {
+	footer {
+		position: fixed;
+		bottom: 2%;
+		left: 1%;	}
+}
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+			footer {
+			position: fixed;
+			bottom: 2%;
+			left: 1%;	}
 
 }
 /* Landscape phone to portrait tablet */
