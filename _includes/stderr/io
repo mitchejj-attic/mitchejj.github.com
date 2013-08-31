@@ -1,10 +1,10 @@
 
 <article>
 	<header>
-		<hgroup class="post-header">		{% include stderr/setup %}
+		<div class="post-header">		{% include stderr/setup %}
 			<h2>{% if _LLIST_ %}<a href="{{ _LLIST_ }}">{{ _TITLE_ }}</a>{% if _DESC_ %} <small>{{ _DESC_ }}</small>{% endif %}</h2>
 			{% else %}{{ _TITLE_ }}{% if _DESC_ %} <small>{{ _DESC_ }}</small>{% endif %}</h2>{% endif %}
-		</hgroup>
+		</div>
 		<div><small>
 			{% if _SOURCE_.url  %}via: {% if _SOURCE_.title %}	<a href="{{ _SOURCE_.url }}" title="{{ _SOURCE_.title }}">{{ _SOURCE_.title }}</a>
 			{% else %}	<a href="{{ _SOURCE_.url }}">{{ _SOURCE_.url }}</a>{% endif %}{% endif %}</small>
