@@ -3,7 +3,7 @@ layout: post
 title: "quick and dirty metrics"
 description: "actually its about mcache"
 category:
-tags: [meta]
+tags: meta
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
