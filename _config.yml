@@ -6,7 +6,6 @@ permalink: pretty
 exclude: ['public', 'template.md', 'test_metric', 'siteSpec', 'bin', 'vendor', 'lessons', 'Gemfile', 'Gemfile.lock', 'Procfile', 'Rakefile', 'unicorn.rb', 'config.ru', 'README.md', '.rvmrc', '.rbenv-version', 'newrelic.yml']
 #auto: true
 pygments: true
-#markdown: maruku
 relative_permalinks: true
 markdown: kramdown
 kramdown:
@@ -15,7 +14,6 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   smart_quotes: lsquo,rsquo,ldquo,rdquo
-
 prose:
    metadata:
       "_posts": |
@@ -23,7 +21,7 @@ prose:
          title: ""
          description:
          category:
-         tags: []
+         tags:
          source:
             url:
             title:
@@ -32,9 +30,6 @@ prose:
             url:
             caption:
 
-# Themes are encouraged to use these universal variables 
-# so be sure to set them if your theme uses them.
-#
 title : "stderr | log"
 tagline: "an io scratch pad"
 description: "guesstimating abnormality"

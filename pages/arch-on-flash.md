@@ -3,6 +3,7 @@ layout: page
 title: "vacation[summer, 2013]"
 header: "Arch Linux on USB Flash"
 category: project
+group: page
 tags: arch linux
 ---
 {% include JB/setup %}

@@ -14,11 +14,12 @@ image:
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
-My [vacation[summer, 2013]][myLink] ended and I continue to evaluate and tinker with plans to create a standardized deployment across my laptops; I am finding what I once thought was a sure thing isn't. I currently run [OpenBox][openBox] on my Arch install, my desire to keep minimal system along how much I enjoy many aspects of [Crunch Bang][#!] I thought OpenBox would be the clear winner. Yet [Cinnamon][cMon] is starting to emerge as a strong contender, I am starting to grow fond of the environment. I wish Cinnamon was an independant [project][cMonProject] and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX at the whim of the Mint dev team.
+My [vacation\[summer, 2013\]][myLink] ended and I continue to evaluate and tinker with plans to create a standardized deployment across my laptops; I am finding what I once thought was a sure thing isn't. I currently run [OpenBox][openBox] on my Arch install, my desire to keep minimal system along how much I enjoy many aspects of [Crunch Bang][#!] I thought OpenBox would be the clear winner. Yet [Cinnamon][cMon] is starting to emerge as a strong contender, I am starting to grow fond of the environment. I wish Cinnamon was an independant [project][cMonProject] and not a vital cog of Mint Linux. Without such seperation, lack of documantion and independant development cycle the project lacks transparency leaving the UX at the whim of the Mint dev team.
 
->Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop.[^fn1]<small><cite>[Clement Lefebvre][clem]</cite></small> 
+>Cinnamon is a Mint project and it's the implementation of Mint's vision and needs for a desktop.[^fn1]
+><small><cite>[Clement Lefebvre][clem]</cite></small> 
 
-Electing to use Cinnamon would be taking the easy way out along with the baggage associated with it. Cinnamon is a derivative of GNOME, which has a plethora of settings not always exposed to the user. One such setting is natural scrolling, I have natural scrolling correctly configure in xorg.conf{.d}
+Electing to use Cinnamon would be taking the easy way out along with the baggage associated with it. Cinnamon is a derivative of GNOME, which has a plethora of settings not always exposed to the user. One such setting is natural scrolling, I have natural scrolling correctly configure in xorg.conf\{.d\}
 
 
 	Section "InputClass"

@@ -13,6 +13,7 @@ gem 'liquid'
 
 ##### Add-ons for Jekyll
 gem 'kramdown'                  # i wish to use kramdown
+#gem 'maruku'					# just incase
 gem 'coderay'                   # for coderay to make code text look pretty
 gem 'pygmentize'		# lets try not to use coderay
 

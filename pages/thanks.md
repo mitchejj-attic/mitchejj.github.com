@@ -63,7 +63,7 @@ I would just like to record someplace a thank you roll for pages/links and sites
  
 
 ### unicorn																{#unicorn}
-*[Unicorn!](https://github.com/blog/517-unicorn)
+* [Unicorn!](https://github.com/blog/517-unicorn)
 
 ### Look at again														{#back-to}
 [Rails 3.2 + Markdown + Pygments + RedCarpet + Heroku](http://danneu.com/posts/9-rails-3-2-markdown-pygments-redcarpet-heroku)

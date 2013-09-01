@@ -3,7 +3,7 @@ layout: page
 title: whoami
 header: a bio
 tagline: guesstimating abnormality
-group: navigation
+group: page
 ---
 {% include JB/setup %}
 <aside class="about">

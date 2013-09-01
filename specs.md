@@ -3,6 +3,7 @@ layout: page
 title: site specs
 header: infrastructure, specs & data
 tagline: someting
+group: page
 ---
 {% include JB/setup %}
 {% include stderr/setup %}
