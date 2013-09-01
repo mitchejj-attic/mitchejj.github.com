@@ -19,14 +19,17 @@ gem 'coderay'                   # for coderay to make code text look pretty
 gem 'pygmentize'		# lets try not to use coderay
 
 ##### For Flicker plugin
-gem 'RedCloth'
+#gem 'RedCloth'
 #gem 'jekyll'
-gem 'fleakr'
+#gem 'fleakr'
+#gem 'nokogiri'
+#gem 'typhoeus'
+#gem 'shellwords'
 
 ##### Add-ons for Plugins
-gem 'html_press'
-gem 'css_press'
-gem 'uglifier'
+#gem 'html_press'
+#gem 'css_press'
+#gem 'uglifier'
 
 #### For the Server
 gem 'unicorn'                   # our server of chice

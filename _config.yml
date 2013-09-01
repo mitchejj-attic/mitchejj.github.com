@@ -29,7 +29,6 @@ prose:
          image:
             url:
             caption:
-
 title : "stderr | log"
 tagline: "an io scratch pad"
 description: "guesstimating abnormality"
