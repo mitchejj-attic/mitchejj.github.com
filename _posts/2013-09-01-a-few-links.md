@@ -5,8 +5,8 @@ title: "A few links"
 description:
 tags:
 source:
-   url:
-   title:
+   url: http://www.dcrainmaker.com/2013/08/reviewaugust-31st-2013.html
+   title: Week in Review–August 31st, 2013
 llist:
 image:
    url:
