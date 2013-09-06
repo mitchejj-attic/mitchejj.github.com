@@ -11,6 +11,8 @@
 		{% assign _SOURCE_ = post.source %}
 		{% assign _LLIST_ = post.llist %}
 		{% assign _IMAGE_ = post.image %}
+		{% assign _FLICKR_ = post.flickr %}
+		
 {% else %}
 	{% assign _LEAF_ = 1 %}
 	{% assign _CONTENT_ = content %}
@@ -22,4 +24,5 @@
 		{% assign _SOURCE_ = page.source %}
 		{% assign _LLIST_ = page.llist %}
 		{% assign _IMAGE_ = page.image %}
+		{% assign _FLICKR_ = page.flickr %}
 {% endif%}{% endcapture %}{% assign _SAVE_THE_SPACE_ = nil %}
