@@ -40,7 +40,6 @@ GEM
     loggable (0.3.0)
     maruku (0.6.1)
       syntax (>= 1.0.0)
-    memcachier (0.0.2)
     newrelic_rpm (3.6.6.147)
     posix-spawn (0.3.6)
     pygmentize (0.0.3)
@@ -70,7 +69,6 @@ DEPENDENCIES
   jekyll
   kramdown
   liquid
-  memcachier
   newrelic_rpm
   pygmentize
   rack
