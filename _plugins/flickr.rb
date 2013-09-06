@@ -2,7 +2,6 @@
 
 require 'liquid'
 require 'fleakr'
-require 'dalli'
 
 Fleakr.api_key = ENV['FLICKR_API_KEY']
 Fleakr.shared_secret = ENV['FLICKR_SHARED_SECRET']
