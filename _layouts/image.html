@@ -6,8 +6,4 @@ layout: default
 {% include stderr/setup %}
 
 a
-  {% for flickr_url in _FLICKR_ %}
-    <a href="{{ flickr_url }}">{{ flickr_url | flickr_image }}</a>
-    d
-  {% endfor %}
-b
+  {{ _FLICKR_}}
