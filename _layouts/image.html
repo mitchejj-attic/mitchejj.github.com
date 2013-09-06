@@ -7,7 +7,6 @@ layout: default
 
 a
   {% for flickr_url in _FLICKR_ %}
-{{ flickr_url }}
 {{ flickr_url | flickr_image }}
     d
   {% endfor %}
