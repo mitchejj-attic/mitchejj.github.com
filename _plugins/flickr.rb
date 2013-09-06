@@ -11,11 +11,11 @@ CACHED_IMAGES = {}
 
 module Flickr
   def flickr_image(url)
-    "<img alt='#{image_object(url).title}' src='#{image_object(url).large.url}'>"
+    "<img alt='#{image_object(url)}' src='#{image_object(url).large.url}'>"
   end
 
   def flickr_medium_image(url)
-    "<img alt='#{image_object(url).title}' src='#{image_object(url).medium.url}'>"
+    "<img alt='#{image_object(url)}' src='#{image_object(url).medium.url}'>"
   end
 
   private
