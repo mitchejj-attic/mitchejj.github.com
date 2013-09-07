@@ -17,4 +17,4 @@ module Flickr
 	end	
 end
 
-Liquid::Template.register_filter(Flickr
+Liquid::Template.register_filter(Flickr)
