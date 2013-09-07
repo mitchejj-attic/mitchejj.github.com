@@ -14,6 +14,7 @@ module Flickr
 	private
 	def flickr_object(id)
 		object = flickr.photos.getInfo(:photo_id => id)
+		page = object.urls[0]
 
 	end	
 end
