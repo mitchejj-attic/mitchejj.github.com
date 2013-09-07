@@ -13,6 +13,7 @@ module Flickr
 
 	private
 	def flickr_object(id)
+		object = flickr.photos.getInfo(:photo_id => id)
 
 	end	
 end
