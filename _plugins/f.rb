@@ -12,7 +12,9 @@ flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
 module Flickr
 	def photo (id)
 		object = flickr.photos.getInfo(:photo_id => id)
-		page = object.urls[0]
+		id_page_url = object.urls[0]['_content']
+
+
 	end
 
 	def photoset (id)
