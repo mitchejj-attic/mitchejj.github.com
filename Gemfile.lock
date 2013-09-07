@@ -22,6 +22,9 @@ GEM
     directory_watcher (1.4.1)
     execjs (2.0.1)
     fast-stemmer (1.0.2)
+    flickraw (0.9.6)
+    flickraw-cached (20120701)
+      flickraw (>= 0.9)
     highline (1.6.19)
     html_press (0.8.2)
       htmlentities
@@ -77,8 +80,10 @@ PLATFORMS
 DEPENDENCIES
   coderay
   css_press
+  flickraw-cached
   html_press
   jekyll
+  json
   kramdown
   liquid
   newrelic_rpm
