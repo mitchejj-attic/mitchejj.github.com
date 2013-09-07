@@ -10,13 +10,21 @@ flickr.access_token = ENV['FLICKR_AUTH_TOKEN']
 flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
 
 module Flickr
+	def photo (id)
 
+	end
+
+	def photoset (id)
+
+	end
+	
 	private
 	def flickr_object(id)
 		object = flickr.photos.getInfo(:photo_id => id)
 		page = object.urls[0]
+	end
 
-	end	
+
 end
 
 Liquid::Template.register_filter(Flickr)
