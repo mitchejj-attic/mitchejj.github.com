@@ -19,6 +19,7 @@ gem 'pygmentize'		# lets try not to use coderay
 
 ##### For Flicker plugin
 gem 'flickraw-cached'
+gem 'json'
 #gem 'flickraw'
 #gem 'RedCloth'
 #gem 'jekyll'
