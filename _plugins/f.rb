@@ -10,17 +10,17 @@ flickr.access_token = ENV['FLICKR_AUTH_TOKEN']
 flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
 
 module Jekyll
-  class RenderTimeTag < Liquid::Tag
+  class FlickrPhoto < Liquid::Tag
 
-    def initialize(tag_name, text, tokens)
+    def initialize(id)
       super
-      @text = text
+      @id = id
     end
 
     def render(context)
-      "#{@text} #{Time.now}"
+      "#{@id} #{Time.now}"
     end
   end
 end
 
-Liquid::Template.register_tag('render_time', Jekyll::RenderTimeTag)
+Liquid::Template.register_tag('flickr_photo', Jekyll::FlickrPhoto)
