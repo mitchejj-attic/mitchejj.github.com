@@ -19,8 +19,8 @@ gem 'coderay'                   # for coderay to make code text look pretty
 gem 'pygmentize'		# lets try not to use coderay
 
 ##### For Flicker plugin
-gem 'flickraw-cached'
-gem 'flickraw'
+#gem 'flickraw-cached'
+#gem 'flickraw'
 #gem 'RedCloth'
 #gem 'jekyll'
 #gem 'fleakr'
