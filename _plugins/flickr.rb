@@ -31,7 +31,7 @@ flickr:
   shared_secret:   {{ your flickr shared secret }}
   auth_token:      {{ your flickr auth token }}
 
-=end
+
 
 module Jekyll
   
@@ -155,4 +155,4 @@ module Jekyll
 
 end
 
-Liquid::Template.register_filter(Flickr)
+Liquid::Template.register_filter(Flickr)=end
