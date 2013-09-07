@@ -19,9 +19,11 @@ gem 'coderay'                   # for coderay to make code text look pretty
 gem 'pygmentize'		# lets try not to use coderay
 
 ##### For Flicker plugin
+gem 'flickraw-cached'
+gem 'flickraw'
 #gem 'RedCloth'
 #gem 'jekyll'
-gem 'fleakr'
+#gem 'fleakr'
 #gem 'nokogiri'
 #gem 'typhoeus'
 #gem 'shellwords'
@@ -36,6 +38,6 @@ gem 'unicorn'                   # our server of chice
 gem 'rack-cache'
 
 #### For the heroku add-ons
-gem 'dalli'                     #for mecahce
+#gem 'dalli'                     #for mecahce
 #gem 'memcachier'
 gem 'newrelic_rpm'              #for poor stats

@@ -1,68 +1,158 @@
-# https://github.com/himynameisjonas/jonasforsberg.se/blob/master/_plugins/flickr.rb
-
 require 'liquid'
-require 'fleakr'
+require 'json'
+require 'flickraw-cached'
 
-Fleakr.api_key = ENV['FLICKR_API_KEY']
-Fleakr.shared_secret = ENV['FLICKR_SHARED_SECRET']
-Fleakr.auth_token = ENV['FLICKR_AUTH_TOKEN']
+FlickRaw.secure = true
 
-CACHE_VERSION = ENV['FLICKR_CACHE_VERSION'] || "1"
+FlickRaw.api_key = ENV['FLICKR_API_KEY']
+FlickRaw.shared_secret = ENV['FLICKR_SHARED_SECRET']
+flickr.access_token = ENV['FLICKR_AUTH_TOKEN']
+flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
 
-CACHE = Dalli::Client.new
+=begin
 
-module Flickr
-  def flickr_image(url)
-    image = image_object(url)
-    "<figure class='flickr-image align-center' #{image[:sizes].map{|s| "data-media#{s.first}='#{s.last}'"}.join(" ")} alt='#{image[:title]}' title='#{image[:title]}'>
-<noscript>
-<img class='flickr-image align-center' alt='#{image[:title]}' src='#{image[:sizes][1024]}'>
-</noscript>
-</figure>
-"
-  end
+https://raw.github.com/captaincanine/marran.com/master/_plugins/flickr.rb
+http://www.marran.com/tech/integrating-flickr-and-jekyll/
 
-  def flickr_medium_image(url)
-    image = image_object(url)
-    "<img class='flickr-image align-center' alt='#{image[:title]}' src='#{image[:sizes][500]}'>"
-  end
+This module enables easy integration to Flickr for showing photos. In
+posts, if there is a "photoset" attribute in the post, Jekyll will get
+the photo information from Flickr and add it to the post data.
 
-  def flickr_set(url)
-    photos = set_object(url)
-    photos.map do |photo_url|
-      "<img class='flickr-image align-center' alt='' src='#{photo_url}'>"
-    end.join(" ")
-  end
+Since the Flickr calls can be very time-consuming, the calls to Flickr
+are cached.
 
-  private
+In order to use this, you need to have previously authorized with
+Flickr. The following information needs to be in _config.yml:
 
-  def set_object(url)
-    CACHE.fetch(url) do
-      set = Fleakr.resource_from_url(url)
-      photos = set.photos.map do |photo|
-        photo.large_square.url
+flickr:
+  enabled:         yes
+  cache_dir:       ./_cache/flickr
+  api_key:         {{ your flickr api key }}
+  shared_secret:   {{ your flickr shared secret }}
+  auth_token:      {{ your flickr auth token }}
+
+=end
+
+module Jekyll
+  
+  class GeneratePhotosets < Generator
+
+    safe true
+    priority :low
+
+    def generate(site)
+      generate_photosets(site) if (site.config['flickr']['enabled']) 
+    end
+    
+    def generate_photosets(site)
+      site.posts.each do |p|
+        p.data['photos'] = load_photos(p.data['photoset'], site) if p.data['photoset']
       end
     end
+
+    def load_photos(photoset, site)
+
+      if cache_dir = site.config['flickr']['cache_dir']
+        path = File.join(cache_dir, "#{Digest::MD5.hexdigest(photoset.to_s)}.yml")
+        if File.exist?(path)
+          photos = YAML::load(File.read(path))
+        else
+          photos = generate_photo_data(photoset, site)
+          File.open(path, 'w') {|f| f.print(YAML::dump(photos)) }
+        end
+      else
+        photos = generate_photo_data(photoset, site)
+      end
+  
+      photos
+  
+    end
+
+    def generate_photo_data(photoset, site)
+      
+      returnSet = Array.new 
+    
+      FlickRaw.api_key = site.config['flickr']['api_key']
+      FlickRaw.shared_secret = site.config['flickr']['shared_secret']
+      
+      flickr.access_token = site.config['flickr']['auth_token']
+      flickr.access_secret = site.config['flickr']['auth_token_secret']
+
+      photos = flickr.photosets.getPhotos :photoset_id => photoset
+      
+      photos.photo.each_index do | i |
+      
+        title = photos.photo[i].title
+        id = photos.photo[i].id
+        fullSizeUrl = String.new
+        urlThumb = String.new
+        urlFull = String.new
+        thumbType = String.new
+          
+        sizes = flickr.photos.getSizes(:photo_id => id).to_a
+        sizes.each do | s |
+        
+          if s.width.to_i < 1200
+            urlFull = s.source
+          end
+                              
+          if s.label == 'Large Square'
+            urlThumb = s.source
+            thumbType = 'square'
+          end
+
+        end
+  
+        photo = FlickrPhoto.new(title, urlFull, urlThumb, thumbType)
+        returnSet.push photo
+      
+      end
+      
+      #sleep a little so that you don't get in trouble for bombarding the Flickr servers
+      sleep 1
+      
+      returnSet
+  
+    end
+  
+  end
+  
+  class FlickrPhoto
+
+    attr_accessor :title, :urlFullSize, :urlThumbnail, :thumbType
+    
+    def initialize(title, urlFullSize, urlThumbnail, thumbType)
+      @title = title
+      @urlFullSize = urlFullSize
+      @urlThumbnail = urlThumbnail
+      @thumbType = thumbType
+    end
+    
+    def to_liquid
+      {
+        'title' => title,
+        'urlFullSize' => urlFullSize,
+        'urlThumbnail' => urlThumbnail,
+        'thumbType' => thumbType
+      }
+      
+    end
+
+  end
+  
+  module Filters
+  
+    def flickr_photo (id, size)
+    
+    
+        
+      # open-uri RDoc: http://stdlib.rubyonrails.org/libdoc/open-uri/rdoc/index.html
+      open(url) { |f| return f.read }
+    
+    end
+    
   end
 
-  def image_object(url)
-    CACHE.fetch(url + CACHE_VERSION) do
-      fleakr_image = Fleakr.resource_from_url(url)
-      image = {:sizes => {}}
-      image[:sizes][nil] = fleakr_image.medium.url unless fleakr_image.medium.nil?
-      image[:sizes][fleakr_image.medium.width.to_i] = fleakr_image.medium.url unless fleakr_image.medium.nil?
-      image[:sizes][fleakr_image.small_320.width.to_i] = fleakr_image.small_320.url unless fleakr_image.small_320.nil?
-      image[:sizes][fleakr_image.medium.width.to_i] = fleakr_image.medium.url unless fleakr_image.medium.nil?
-      image[:sizes][fleakr_image.medium_640.width.to_i] = fleakr_image.medium_640.url unless fleakr_image.medium_640.nil?
-      image[:sizes][fleakr_image.medium_800.width.to_i] = fleakr_image.medium_800.url unless fleakr_image.medium_800.nil?
-      image[:sizes][fleakr_image.large.width.to_i] = fleakr_image.large.url unless fleakr_image.large.nil?
-      image[:sizes][fleakr_image.large_1600.width.to_i] = fleakr_image.large_1600.url unless fleakr_image.large_1600.nil?
-      image[:sizes][fleakr_image.large_2048.width.to_i] = fleakr_image.large_2048.url unless fleakr_image.large_2048.nil?
-      image[:title] = fleakr_image.title
-      CACHE.set(url, image)
-      image
-    end
-  end
 end
 
 Liquid::Template.register_filter(Flickr)
