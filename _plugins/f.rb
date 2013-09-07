@@ -9,18 +9,12 @@ FlickRaw.shared_secret = ENV['FLICKR_SHARED_SECRET']
 flickr.access_token = ENV['FLICKR_AUTH_TOKEN']
 flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
 
-module Jekyll
-  class FlickrPhoto < Liquid::Tag
+module Flickr
 
-    def initialize(id)
-      super
-      @id = id
-    end
+	private
+	def flickr_object(id)
 
-    def render(context)
-      "#{@id} #{Time.now}"
-    end
-  end
+	end	
 end
 
-Liquid::Template.register_tag('flickr_photo', Jekyll::FlickrPhoto)
+Liquid::Template.register_filter(Flickr
