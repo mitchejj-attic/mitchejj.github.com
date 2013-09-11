@@ -32,7 +32,7 @@ For now I think I will be going with [SpiderOak][spiderOak]s. While SpiderOak ma
 
 Oh, I also have a lifetime account with StrongSpace... and while it can work as a backup solution and can sync via rsync. I must admit I don't feel I can trust it as a long term solution. Not after the Joyent/TextDrive debacle.
 
-[^gitBackup]: Though it sounds like Git would make an amazing backup tool, Git really doesn't work out well for backups over the long term. Many solutions that are specifically designed for performing backups are even less expensive than GitHub's Micro plan. via: [GitHub][gitBackup]
+[^gitBackup]: Though it sounds like Git would make an amazing backup tool, Git really doesn't work out well for backups over the long term. Many solutions that are specifically designed for performing backups are even less expensive than GitHub's Micro plan. via: [GitHub][gitBackup] 
 
 [dropbox]: http://db.tt/Woq86zN
 [sparkleshare]: http://sparkleshare.org/
