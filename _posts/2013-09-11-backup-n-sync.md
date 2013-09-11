@@ -35,7 +35,7 @@ Oh, I also have a lifetime account with StrongSpace... and while it can work as 
 [^gitBackup]: Though it sounds like Git would make an amazing backup tool, Git really doesn't work out well for backups over the long term. Many solutions that are specifically designed for performing backups are even less expensive than GitHub's Micro plan. via: [GitHub][gitBackup]
 
 [dropbox]: http://db.tt/Woq86zN
-[sparkleshare]: http:///
+[sparkleshare]: http://sparkleshare.org/
 [gitBackup]: https://help.github.com/articles/what-is-my-disk-quota#backups
 [gitSize]: http://www.quora.com/Git-revision-control/What-is-the-practical-maximum-size-of-a-Git-repository-full-of-text-based-data?share=1
 [amazonS3]: http://aws.amazon.com/s3/
