@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "digital history"
 description: "the final frontier in personal computing"
