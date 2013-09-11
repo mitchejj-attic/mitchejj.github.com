@@ -22,7 +22,7 @@ From what I can tell on a few "big box" solutions exist. In the past I have reli
 
 Last year I did purchase a backup plan at a discounted price, Crash Plan. I didn't do much research on it, but for the price I just couldn't resist. I later found out the client side software required Java, I'm not a fan of running Java but I gave it spin and quickly dropped that solution. It seems like a good program, but ipt isn't want I want/need.
 
-For awhile I've been doing my own thing using SparkleShare. At first glance this seems like a perfect solution, use anyone of the git based hosting solutions to to keep everything backed up and synced. This is great for little things that you wish to share, like your dotfiles or even your website. When the data becomes more personal, or work related you start looking at -crypto. Once you enable crypto Sparkleshare starts to break down. You no longer have easy access to files when away from your system and esentially loose revision control. In addition a [git repository does have a practical size limit][gitSize].
+For awhile I've been doing my own thing using SparkleShare. At first glance this seems[^gitBackup] like a perfect solution, use anyone of the git based hosting solutions to to keep everything backed up and synced. This is great for little things that you wish to share, like your dotfiles or even your website. When the data becomes more personal, or work related you start looking at -crypto. Once you enable crypto Sparkleshare starts to break down. You no longer have easy access to files when away from your system and esentially loose revision control. In addition a [git repository does have a practical size limit][gitSize].
 
 A few weeks ago I tried duplicity, I like it but where do I store my off site backups? The logical solution seems to be [Amazon S3][amazonS3] or [Amazon Glacier][amazonGlacier]. Both services are well tested and it is doubtful they will disappear anytime soon. This may be the best long term solution for deep archiving and will preserve some form of digital history.
 
@@ -32,8 +32,11 @@ For now I think I will be going with [SpiderOak][spiderOak]s. While SpiderOak ma
 
 Oh, I also have a lifetime account with StrongSpace... and while it can work as a backup solution and can sync via rsync. I must admit I don't feel I can trust it as a long term solution. Not after the Joyent/TextDrive debacle.
 
+[^gitBackup]: Though it sounds like Git would make an amazing backup tool, Git really doesn't work out well for backups over the long term. Many solutions that are specifically designed for performing backups are even less expensive than GitHub's Micro plan. via: [GitHub][gitBackup]
+
 [dropbox]: http://db.tt/Woq86zN
-[sparkleshare]: http:/// 
+[sparkleshare]: http:///
+[gitBackup]: https://help.github.com/articles/what-is-my-disk-quota#backups
 [gitSize]: http://www.quora.com/Git-revision-control/What-is-the-practical-maximum-size-of-a-Git-repository-full-of-text-based-data?share=1
 [amazonS3]: http://aws.amazon.com/s3/
 [amazonGlacier]: http://aws.amazon.com/glacier/
