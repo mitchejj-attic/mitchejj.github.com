@@ -26,9 +26,9 @@ For awhile I've been doing my own thing using SparkleShare. At first glance this
 
 A few weeks ago I tried duplicity, I like it but where do I store my off site backups? The logical solution seems to be [Amazon S3][amazonS3] or [Amazon Glacier][amazonGlacier]. Both services are well tested and it is doubtful they will disappear anytime soon. This may be the best long term solution for deep archiving and will preserve some form of digital history.
 
- I've also tried BitSync, which keeps files in sync with amazing effecienty but for the sync to work more than one system, under your control, must be onlne.
+ I've also tried [BitSync][bitSync], which keeps files in sync with amazing effecienty but for the sync to work more than one system, under your control, must be onlne. It also seems to be more or a niche geek solution.
 
-For now I think I will be going with SpiderOak. While SpiderOak may not be the most ideal solution for the preserving a persons digital history, it currently seems to be best of all the bad choices. I can then layer in the other systems/methods and allow SpiderOak to main heavy lifting.
+For now I think I will be going with [SpiderOak][spiderOak]s. While SpiderOak may not be the most ideal solution for the preserving a persons digital history, it currently seems to be best of all the bad choices. I can then layer in the other systems/methods and allow SpiderOak to main heavy lifting.
 
 Oh, I also have a lifetime account with StrongSpace... and while it can work as a backup solution and can sync via rsync. I must admit I don't feel I can trust it as a long term solution. Not after the Joyent/TextDrive debacle.
 
@@ -38,4 +38,4 @@ Oh, I also have a lifetime account with StrongSpace... and while it can work as 
 [amazonS3]: http://aws.amazon.com/s3/
 [amazonGlacier]: http://aws.amazon.com/glacier/
 [bitSync]: http://labs.bittorrent.com/experiments/sync.html
-[SpiderOak]: https://spideroak.com/download/referral/3dd319d4afeaad92c8672e76c8789ef2
+[spiderOak]: https://spideroak.com/download/referral/3dd319d4afeaad92c8672e76c8789ef2
