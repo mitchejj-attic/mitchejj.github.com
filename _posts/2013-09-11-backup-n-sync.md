@@ -3,7 +3,7 @@ published: true
 layout: post
 title: "digital history"
 description: "the final frontier in personal computing"
-tags:
+tags: sync backup
 source:
    url:
    title:
