@@ -37,3 +37,5 @@ Oh, I also have a lifetime account with StrongSpace... and while it can work as 
 [gitSize]: http://www.quora.com/Git-revision-control/What-is-the-practical-maximum-size-of-a-Git-repository-full-of-text-based-data?share=1
 [amazonS3]: http://aws.amazon.com/s3/
 [amazonGlacier]: http://aws.amazon.com/glacier/
+[bitSync]: http://labs.bittorrent.com/experiments/sync.html
+[SpiderOak]: https://spideroak.com/download/referral/3dd319d4afeaad92c8672e76c8789ef2
