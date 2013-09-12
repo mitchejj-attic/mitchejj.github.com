@@ -13,11 +13,11 @@ module Flickr
 	def photo (id)
 		object = flickr.photos.getInfo(:photo_id => id)
 		id_page_url = object.urls[0]['_content']
-
-
+		id_image = FlickRaw.url_z(object)
 	end
 
 	def photoset (id)
+		object = flickr.photosets.getList(:photoset_id => id)
 
 	end
 
