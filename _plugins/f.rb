@@ -18,6 +18,7 @@ module Flickr
 
 	def photoset (id)
 		object = flickr.photosets.getList(:photoset_id => id)
+		
 
 	end
 
