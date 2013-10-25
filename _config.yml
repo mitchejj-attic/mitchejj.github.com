@@ -44,14 +44,15 @@ asset:
    css: //netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.no-icons.min.css
    tweaks: /../assets/nuts_n_bolts.css
    js: //netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js
-   icons: //netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css
+   #icons: //netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css
+   icons: //netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css
    #jquery: //code.jquery.com/jquery-1.10.2.min.js
    jquery: //ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 icon:
-   visited: icon-bookmark
-   unvisited: icon-bookmark-empty
-   widget: icon-ellipsis-vertical
-   list: icon-caret-right
+   visited: fa-bookmark
+   unvisited: fa-bookmark-o
+   widget: fa-ellipsis-vertical
+   list: fa-caret-right
 paginate: 5
 paginate_path: 'page:num'
 destination: public
