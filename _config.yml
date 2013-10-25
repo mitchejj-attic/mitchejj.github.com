@@ -47,10 +47,10 @@ asset:
    #jquery: //code.jquery.com/jquery-1.10.2.min.js
    jquery: //ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js
 icon:
-   visited: fa-bookmark
-   unvisited: fa-bookmark-o
-   widget: fa-ellipsis-vertical
-   list: fa-caret-right
+   visited: fa fa-bookmark
+   unvisited: fa fa-bookmark-o
+   widget: fa fa-ellipsis-vertical
+   list: fa fa-caret-right
 paginate: 5
 paginate_path: 'page:num'
 destination: public
