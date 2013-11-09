@@ -58,7 +58,11 @@ a.permalink :hover{
 .about {
 	text-align: left;
 }
-
+.absolute-center {		/*	http://coding.smashingmagazine.com/2013/08/09/absolute-horizontal-vertical-centering-css/	*/
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
 /* Large desktop */
 @media (min-width: 1200px) {
 	.fixed-position {
