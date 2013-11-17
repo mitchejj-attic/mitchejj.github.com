@@ -23,6 +23,8 @@ Early on I tried the ever so popular RunKeeper, something about it just didn't f
 **UPDATE:**
 
 >We held off on supporting it because of other priorities.
+>
 >...
+>
 >hey share an API, but there are subtle differences (like the fact that the Echo display is round). I do expect that we'll support it, but I don't know when yet. But we're getting a couple of them here. That's usually a good first step.
 ><small><cite>Abvio Support email</cite></small>
