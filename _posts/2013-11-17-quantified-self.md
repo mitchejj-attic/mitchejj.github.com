@@ -3,7 +3,7 @@ published: false
 layout: post
 title: "quantitative self"
 description:
-tags:
+tags: running
 source:
    url:
    title:
