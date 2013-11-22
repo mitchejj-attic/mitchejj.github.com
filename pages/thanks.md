@@ -59,7 +59,7 @@ I would just like to record someplace a thank you roll for pages/links and sites
 * [How to get 4x the performance out of Heroku with Unicorn](http://blog.railsonfire.com/2012/05/06/Unicorn-on-Heroku.html)
 * [Getting efficient when working with Heroku](http://blog.railsonfire.com/2012/05/29/Effective-Heroku.html)
 * [More concurrency on a single Heroku dyno with the new Celadon Cedar stack](http://michaelvanrooijen.com/articles/2011/06/01-more-concurrency-on-a-single-heroku-dyno-with-the-new-celadon-cedar-stack/)
-* [Overcome Heroku’s “Permission denied publickey” problem](https://zylstra.wordpress.com/2008/08/29/overcome-herokus-permission-denied-publickey-problem/)
+* [Overcome Heroku�s "Permission denied publickey" problem](https://zylstra.wordpress.com/2008/08/29/overcome-herokus-permission-denied-publickey-problem/)
  
 
 ### unicorn																{#unicorn}
