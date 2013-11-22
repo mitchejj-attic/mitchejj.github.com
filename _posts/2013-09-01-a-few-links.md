@@ -6,7 +6,7 @@ description:
 tags:
 source:
    url: http://www.dcrainmaker.com/2013/08/reviewaugust-31st-2013.html
-   title: Week in Review–August 31st, 2013
+   title: Week in Review - August 31st, 2013
 llist:
 image:
    url:
