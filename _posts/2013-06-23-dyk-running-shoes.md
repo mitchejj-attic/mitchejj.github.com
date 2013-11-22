@@ -1,7 +1,7 @@
 ---
 published: true
 layout: post
-title: "13 Things You Didn’t Know About Running Shoes"
+title: "13 Things You Didn't Know About Running Shoes"
 description: ""
 tags:
 source:
