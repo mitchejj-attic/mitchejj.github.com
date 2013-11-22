@@ -10,4 +10,4 @@ I the course of building and deploying this site one particular site has been tr
 
 __The probelm:__ Jekyll on heroku publishes mysterious pages, and they all relate to your project someway, somehow.
 
-__The solution:__ Let's call the directory where Jekyll is installed & running from the root /. Heroku installs the applications gems in `/vendor`. When Jekyll builds the site it scans all files and folder in the root file directory, including `/vendor`.  Fix is to simple edit `_config.yml` and put ‘vendor’ in the exclude array.
+__The solution:__ Let's call the directory where Jekyll is installed & running from the root /. Heroku installs the applications gems in `/vendor`. When Jekyll builds the site it scans all files and folder in the root file directory, including `/vendor`.  Fix is to simple edit `_config.yml` and put `vendor` in the exclude array.
