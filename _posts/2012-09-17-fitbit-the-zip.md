@@ -22,7 +22,7 @@ I ordered my first [fitbit, the classic,][1] on March 8th 2010, each day I wait 
 
 Today, fitbit announced two new products the [One][4] and the [Zip][5]. Both promise to sync via [Bluetooth 4.0][6]/[Bluetooth Smart][7], and both are said to be water resistant (sweat,rain and the like). I really wanted to buy the One, but two things held me back. First, its pre-shipping order status and second the design looks similar enough to the original created a love-hate connection in my mind. While the Zip had one negative in my book, no sleep tracking. I placed an order for my Zip.
 
->If you want to turn fitness into a lifestyle, the One is for you. For starters, it never rests. During the day, it tracks your steps, distance, calories burned, and stairs climbed. Come nightfall, it measures your sleep cycle, helps you learn how to sleep better, and wakes you in the morning. The One motivates you to reach your goals by bringing greater fitness into your life — seamlessly, socially, 24 hours a day.
+>If you want to turn fitness into a lifestyle, the One is for you. For starters, it never rests. During the day, it tracks your steps, distance, calories burned, and stairs climbed. Come nightfall, it measures your sleep cycle, helps you learn how to sleep better, and wakes you in the morning. The One motivates you to reach your goals by bringing greater fitness into your life - seamlessly, socially, 24 hours a day.
 ><small><cite>[gdgt][b]</cite></small>
 
 __UPDATE:__ after an outing at the gym I put my order on hold. I don't think I have the same use case for a fitbit I did back in 2010. Going with a product that is less than the orginal may not be a wise buying choice. I will wait and see product review of both the Zip and One before buy.
