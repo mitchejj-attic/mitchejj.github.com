@@ -1,33 +1,33 @@
-require 'liquid'
-require 'json'
-require 'flickraw-cached'
+#require 'liquid'
+#require 'json'
+#require 'flickraw-cached'
 
-FlickRaw.secure = true
+#FlickRaw.secure = true
 
-FlickRaw.api_key = ENV['FLICKR_API_KEY']
-FlickRaw.shared_secret = ENV['FLICKR_SHARED_SECRET']
-flickr.access_token = ENV['FLICKR_AUTH_TOKEN']
-flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
+#FlickRaw.api_key = ENV['FLICKR_API_KEY']
+#FlickRaw.shared_secret = ENV['FLICKR_SHARED_SECRET']
+#flickr.access_token = ENV['FLICKR_AUTH_TOKEN']
+#flickr.access_secret = ENV['FLICKR_AUTH_SECRET']
 
-module Flickr
-	def photo (id)
-		object = flickr.photos.getInfo(:photo_id => id)
-		id_page_url = object.urls[0]['_content']
-		id_image = FlickRaw.url_z(object)
-	end
+#module Flickr
+#	def photo (id)
+#		object = flickr.photos.getInfo(:photo_id => id)
+#		id_page_url = object.urls[0]['_content']
+#		id_image = FlickRaw.url_z(object)
+#	end
 
-	def photoset (id)
-		object = flickr.photosets.getList(:photoset_id => id)
+#	def photoset (id)
+#		object = flickr.photosets.getList(:photoset_id => id)
 		
 
-	end
+#	end
 
-	private
-	def flickr_object(id, type)
+#	private
+#	def flickr_object(id, type)
 
-	end
+#	end
 
 
-end
+#end
 
-Liquid::Template.register_filter(Flickr)
+#Liquid::Template.register_filter(Flickr)
