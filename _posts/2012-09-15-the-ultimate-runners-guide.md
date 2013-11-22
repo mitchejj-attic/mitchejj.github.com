@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Ultimate Runner’s Guide"
+title: "The Ultimate Runner's Guide"
 description: (Infographic)
 category: fitness
 tags: [running]
