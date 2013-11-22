@@ -35,7 +35,7 @@ Neither GNOME nor Cinnamon would honor this system wide defualt setting, so some
 	gsettings set org.gnome.settings-daemon.peripherals.touchpad natural-scroll "true"
 
 
-[^fn1]: "It’s in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug." It is perfectly acceptable for Mint to spend their resources on improving Cinnamon for Mint. Speaking only as an end user not using a Mint distro, if I elect to use Cinnamon I would personally feel more comfortable with my choice if development priority was given to improve the project overall and not specifically Mint.
+[^fn1]: "It's in its design to be compatible with Linux as a whole though, so for it not work or not to be suitable on any distribution is a perfectly valid concern and we do consider it a bug." It is perfectly acceptable for Mint to spend their resources on improving Cinnamon for Mint. Speaking only as an end user not using a Mint distro, if I elect to use Cinnamon I would personally feel more comfortable with my choice if development priority was given to improve the project overall and not specifically Mint.
 
 [#!]: http://crunchbang.org
 [myLink]: ../pages/arch-on-flash
