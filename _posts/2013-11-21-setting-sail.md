@@ -20,6 +20,5 @@ I started toying with this idea yesterday when I created an Arch 'droplet' to cr
 
 I would love to replace Unicorn with Puma, but I don't think that is going to happen at first... I will most likely follow this [guide][1] and go with Nginx as I really do want to keep it simple.
 
-
 [1]: http://www.iamnayr.com/tutorials/jekyll-blog-deploys-using-mina/ "Blazing fast Jekyll blog deploys using Mina"
 [doReferral]: https://www.digitalocean.com/?refcode=a0a34d82deb4 "Shameless Referal Link"
