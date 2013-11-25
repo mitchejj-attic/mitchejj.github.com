@@ -1,0 +1,28 @@
+{% capture _SAVE_THE_SPACE_ %}
+{% include JB/setup %}
+{% if post %}
+	{% assign _LEAF_ = FALSE %}
+	{% assign _CONTENT_ = post.content %}
+	{% assign _URL_ = post.url %}
+	{% assign _TITLE_ = post.title %}
+	{% assign _DESC_ = post.description %}
+	{% assign _DATE_ = post.date %}
+	{% assign _TAGS_ = post.tags %}
+		{% assign _SOURCE_ = post.source %}
+		{% assign _LLIST_ = post.llist %}
+		{% assign _IMAGE_ = post.image %}
+		{% assign _FLICKR_ = post.flickr %}
+		
+{% else %}
+	{% assign _LEAF_ = 1 %}
+	{% assign _CONTENT_ = content %}
+	{% assign _URL_ = page.url %}
+	{% assign _TITLE_ = page.title %}
+	{% assign _DESC_ = page.description %}
+	{% assign _DATE_ = page.date %}
+	{% assign _TAGS_ = page.tags %}
+		{% assign _SOURCE_ = page.source %}
+		{% assign _LLIST_ = page.llist %}
+		{% assign _IMAGE_ = page.image %}
+		{% assign _FLICKR_ = page.flickr %}
+{% endif%}{% endcapture %}{% assign _SAVE_THE_SPACE_ = nil %}

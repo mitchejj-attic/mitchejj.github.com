@@ -1,0 +1,44 @@
+---
+layout: page
+title: Tags
+header: Posts By Tag
+group: page
+---
+{% include JB/setup %}
+{% assign _B1_ =  site.tags %}
+<div class="tabbable">
+	<ul class="nav nav-pills"  id="_tags_">
+	{% for tag in site.tags %}
+		{% if forloop.first %}
+			<li class=""><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+		{% else %}
+			<li><a href="{{ BASE_PATH }}{{ site.JB.tags_path }}#{{ tag[0] }}" data-toggle="tab">{{ tag[0] }}</a></li>
+		{% endif %}
+	{% endfor %}
+	</ul>
+	<div class="tab-content">
+		{% for item in site.tags %}
+			{% if forloop.first %}
+				<section class="tab-pane " id="{{ item[0] }}">
+				<ul class="list-unstyled">
+				{% for node in item[1] %}
+					{% if node.title != null %}
+						<li><small class="text-muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time> <i class="{{ site.icon.list }}"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
+				{% endfor %}
+				</ul>
+				</section>	
+			{% else %}
+				<section class="tab-pane" id="{{ item[0] }}">
+				<ul class="list-unstyled">
+				{% for node in item[1] %}
+					{% if node.title != null %}
+						<li><small class="text-muted"><time datetime="{{ node.date | date: "%Y-%m-%d" }}">{{ node.date | date: "%b %d %Y" }}</time> <i class="{{ site.icon.list }}"></i></small> <a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+					{% endif %}
+				{% endfor%}
+				</ul>
+				</section>
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
