@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "Free Is Good"
 description: Greed is good
