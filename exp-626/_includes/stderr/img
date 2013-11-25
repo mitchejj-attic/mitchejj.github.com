@@ -1,1 +1,0 @@
-{% include stderr/setup %} {% if _IMAGE_.url  %} <div class="image" markdown="1"><figure><img src="{{ _IMAGE_.url }}" class="img-rounded img-post"><figcaption><br>{{ _IMAGE_.caption }}</figcaption></figure></div> {% endif %}
